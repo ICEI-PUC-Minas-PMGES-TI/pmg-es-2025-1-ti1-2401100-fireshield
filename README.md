@@ -1,18 +1,22 @@
-# Nome do projeto
+# FireShield
 
-Escreva um ou dois parágrafo resumindo o objetivo do seu projeto.
+a produção de um software de denúncia facilitará o reporte rápido de focos de incêndio, conectando cidadãos às autoridades para uma resposta mais ágil e eficaz, reduzindo impactos e promovendo a conscientização.
 
 ## Alunos integrantes da equipe
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Antonio Loureiro Leandro Neto
+* Arthur Lopes de Paiva 
+* Bernado Molinari Lopes
+* Cauã Thomarco Thomaz Teixeira 
+* Guilherme Azevedo Mello
+* Lian Vasconcelos Queiroz 
+* Lucas Domingos Batista Silva 
+* Rafael Lopes da Costa
 
 ## Professores responsáveis
 
-* Nome completo do professor 1
-* Nome completo do professor 2
+* Diego Augusto de Faria Barros
+* Michelle Hanne Soares de Andrade
 
 
 
