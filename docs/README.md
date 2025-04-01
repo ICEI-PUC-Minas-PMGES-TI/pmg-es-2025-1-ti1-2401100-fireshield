@@ -1,14 +1,20 @@
 # Introdução
 
-Informações básicas do projeto.
+As queimadas causam danos ambientais e à saúde, agravados pela detecção tardia e falta de denúncias. Um software de denúncia facilitará o reporte rápido de focos de incêndio, conectando cidadãos às autoridades para uma resposta mais ágil e eficaz, reduzindo impactos e promovendo a conscientização.
 
-* **Projeto:** [NOME DO PROJETO]
-* **Repositório GitHub:** [LINK PARA O REPOSITÓRIO NO GITHUB]
+* **Projeto:**
+[FireShield]
+* **Repositório GitHub:** 
+[https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2025-1-ti1-2401100-fireshield.git]
 * **Membros da equipe:**
 
-  * [Fulano](https://github.com/fulano) ⚠️ EXEMPLO ⚠️
-  * [Beltrano](https://github.com/beltrano) ⚠️ EXEMPLO ⚠️
-  * [Cicrano](https://github.com/cicrano) ⚠️ EXEMPLO ⚠️
+  * [Cauã Thomarco](https://github.com/CauaThomarco)
+  * [Arthur Lopes](https://github.com/lopes565)
+  * [Rafael Lopes](https://github.com/rafaellldcz)
+  * [Guilherme Mello](https://github.com/GuilhermeAMello)
+  * [Bernado Molinari](https://github.com/BernardoMolinari)
+  * [Lucas Domingos](https://github.com/LucasDomingos1)
+  * [Lian Vasconcelos](https://github.com/Lianvq)
 
 A documentação do projeto é estruturada da seguinte forma:
 
@@ -28,90 +34,41 @@ Detalhes sobre o espaço de problema, os objetivos do projeto, sua justificativa
 
 ## Problema
 
-**✳️✳️✳️ COLOQUE AQUI O SEU TEXTO ✳️✳️✳️**
+**✳️✳️✳️As queimadas representam uma grave ameaça ao meio ambiente e à saúde pública. Elas resultam na destruição da biodiversidade, degradação do solo, poluição atmosférica e agravam problemas respiratórios na população. Além disso, as queimadas contribuem para o aquecimento global ao liberar grandes quantidades de CO₂ na atmosfera. No entanto, a detecção tardia e a falta de denúncias dificultam a resposta rápida e eficaz, permitindo que o fogo se alastre e cause ainda mais danos.**
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Nesse momento você deve apresentar o problema que a sua aplicação deve resolver. No entanto, não é a hora de comentar sobre a aplicação. Descreva também o contexto em que essa aplicação será usada, se houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de fato existir, pois ainda não é a hora de apresentar requisitos detalhados ou projetos.
->
-> **Orientações**:
->
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+**A rápida detecção de queimadas pode ser um fator crucial para minimizar seus impactos ambientais e de saúde. No entanto, há desafios significativos que dificultam esse processo, como a ausência de um sistema eficiente de denúncia e a falta de conscientização da população. Além disso, a demora na resposta às queimadas pode agravar a destruição da biodiversidade e afetar diretamente as comunidades locais, tornando a prevenção e o combate mais complexos.**
+
+**Outro aspecto relevante é o impacto da tecnologia na participação ativa da sociedade no combate às queimadas. Uma solução eficiente poderia incentivar o envolvimento da população e fortalecer a conexão entre cidadãos e autoridades responsáveis. Dessa forma, entender os fatores que influenciam a eficiência na denúncia e a resposta ao fogo é essencial para mitigar os danos causados por esses eventos.✳️✳️✳️**
 
 ## Objetivos
 
-**✳️✳️✳️ COLOQUE AQUI O SEU TEXTO ✳️✳️✳️**
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
->
-> **Orientações**:
->
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+**✳️✳️✳️O objetivo principal do nosso software é aumentar a eficiência dos bombeiros na região de Minas Gerais, trazendo mais rapidez no processo, clareza nas informações e um procedimento mais fluído.**
+**Para atingirmos esse objetivo principal, devemos pensar em alguns objetivos mais específicos, sendo eles: Entender as dores dos clientes, entender o processo realizado pelo CBMMG (Corpo de Bombeiros Militar de Minas Gerais), buscar uma forma de passar a informação de forma clara e dinâmica para acelerar a rapidez para resolução do chamado, informar e atualizar os clientes sobre status de denúncias de forma quase imediata, utilizar o serviço do Google Maps para obter informações para trazer dinamicidade para resolução de denúncias. (Dentro das Leis Gerais de Proteção de Dados (LGPD)).✳️✳️✳️**
 
 ## Justificativa
 
-**✳️✳️✳️ COLOQUE AQUI O SEU TEXTO ✳️✳️✳️**
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
->
-> O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
->
-> **Orientações**:
->
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+**✳️✳️✳️ Compreender que a detecção tardia das queimadas e a falta de denúncias dificultam a resposta eficaz e agravam os impactos ambientais e sociais, apresentando uma solução baseada em um software de denúncia que facilita o reporte rápido de focos de incêndio, conectando cidadãos às autoridades de maneira ágil e precisa. Essa iniciativa é voltada para a população e órgãos responsáveis pelo combate ao fogo, fundamentando-se no uso da tecnologia como ferramenta essencial para a conscientização e redução dos danos causados pelas queimadas.✳️✳️✳️**
 
 ## Público-Alvo
 
-**✳️✳️✳️ COLOQUE AQUI O SEU TEXTO ✳️✳️✳️**
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Descreva quais são as pessoas que usarão a sua aplicação indicando os diferentes perfis. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações hierárquicas, etc.
->
-> Adicione informações sobre o público-alvo por meio de uma descrição textual, ou diagramas de personas, mapa de stakeholders, ou como o grupo achar mais conveniente.
->
-> **Orientações**:
->
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
-
+**✳️✳️✳️O público-alvo que irá utilizar o Software serão pessoas adultas, preocupadas com a segurança e velocidade do processo dos bombeiros, preocupadas com o meio ambiente e e que querem acompanhar as denúncias em andamento e resolvidas pelo CBMMG.✳️✳️✳️**
 # Product Discovery
 
 ## Etapa de Entendimento
 
-**✳️✳️✳️ APRESENTE OS ARTEFATOS DA ETAPA  ✳️✳️✳️**
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Nessa etapa, vamos trabalhar com a metdologia de Design Thinking para compreender com maior profundidade o problema a ser tratado. Nesse processo, vamos elaborar:
->
-> * **Matriz CSD**: também conhecida por Matriz de Alinhamento, é uma ferramenta utilizada no Design Thinking para organizar informações e facilitar o processo de tomada de decisão e solução de problemas;
-> * **Mapa de stakeholders**: ferramenta que nos permite compreender o grupo de pessoas e entidades que devemos estudar e conversar para entender mais sobre o problema
-> * **Entrevistas qualitativas**: série de entrevistas qualitativas para validar suposições e solucionar as dúvidas com as principais pessoas envolvidas;
-> * **Highlights de pesquisa**: um compilado do levantamento realizado por meio das entrevistas.
+**✳️✳️✳️ ![Mapa de Alinhamento e Stakeholders](<docs/images/G5 -  Denúncia de Queimadas - Entendimento - Empatia 1.jpg>)**
+**![Entrevistas Qualitativas e Highlights da pesquisa](<images/G5 -  Denúncia de Queimadas - &lt;-- Entrevistas - Empatia 4.jpg>)**
+**![Entrevistas Qualitativas e Highlights da pesquisa](<images/G5 -  Denúncia de Queimadas - &lt;-- Entrevistas - Empatia (V) 3.jpg>)**
+**![Entrevistas Qualitativas e Highlights da pesquisa](<images/G5 -  Denúncia de Queimadas - &lt;-- Entrevistas - Empatia (V) 2.jpg>)✳️✳️✳️**
 
 ## Etapa de Definição
 
 ### Personas
 
-**✳️✳️✳️ APRESENTE OS DIAGRAMAS DE PERSONAS ✳️✳️✳️**
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Relacione as personas identificadas no seu projeto e os respectivos mapas de empatia. Lembre-se que você deve ser enumerar e descrever precisamente e de forma personalizada todos os principais envolvidos com a solução almeja.
->
-> **Orientações**:
->
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Criar personas (Hotmart)](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
+**✳️✳️✳️![Persona](<images/G5 -  Denúncia de Queimadas - Entendimento - Definição 3.jpg>)**
+**![Persona](<images/G5 -  Denúncia de Queimadas - Entendimento - Definição 5.jpg>)**
+**![Persona](<images/G5 -  Denúncia de Queimadas - Entendimento - Definição 6.jpg>)**
+**![Persona](<images/G5 -  Denúncia de Queimadas - Entendimento Definição 4.jpg>)✳️✳️✳️**
 
 # Product Design
 
@@ -123,29 +80,18 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 
 | EU COMO...`PERSONA` | QUERO/PRECISO ...`FUNCIONALIDADE`        | PARA ...`MOTIVO/VALOR`               |
 | --------------------- | ------------------------------------------ | -------------------------------------- |
-| Usuário do sistema   | Registrar minhas tarefas ⚠️ EXEMPLO ⚠️ | Não esquecer de fazê-las             |
-| Administrador         | Alterar permissões ⚠️ EXEMPLO ⚠️      | Permitir que possam administrar contas |
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
->
-> **Orientações**:
->
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
+| Analista de dados  | Acompanhar ocorrências de queimadas na minha região e me informar sobre impactos ambientais | Preciso monitorar padrões de queimadas e seus efeitos no meio ambiente            |
+| Bombeiro        | Receber e denunciar ocorrências de queimadas     | Preciso agir rapidamente para conter incêndios e proteger áreas naturais |
+| Professora de biologia       | Denunciar queimadas em terrenos baldios e áreas próximas     | Preciso ajudar a proteger minha comunidade e melhorar a qualidade do ar|
+| Fazendeira          | Conseguir atendimento rápido do Corpo de Bombeiros para as denúncias rurais     | Proteger minha produção e evitar prejuízos causados pelo fogo |
 
 ## Proposta de Valor
 
-**✳️✳️✳️ APRESENTE O DIAGRAMA DA PROPOSTA DE VALOR PARA CADA PERSONA ✳️✳️✳️**
-
-##### Proposta para Persona XPTO ⚠️ EXEMPLO ⚠️
-
-![Exemplo de proposta de valor](images/exemplo-proposta-valor.png)
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> O mapa da proposta de valor é uma ferramenta que nos ajuda a definir qual tipo de produto ou serviço melhor atende às personas definidas anteriormente.
+**✳️✳️✳️Na parte Inferior da Imagem**
+**![Persona](<images/G5 -  Denúncia de Queimadas - Entendimento - Definição 3.jpg>)**
+**![Persona](<images/G5 -  Denúncia de Queimadas - Entendimento - Definição 5.jpg>)**
+**![Persona](<images/G5 -  Denúncia de Queimadas - Entendimento - Definição 6.jpg>)**
+**![Persona](<images/G5 -  Denúncia de Queimadas - Entendimento Definição 4.jpg>)✳️✳️✳️**
 
 ## Requisitos
 
@@ -153,33 +99,29 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ### Requisitos Funcionais
 
-| ID     | Descrição do Requisito                                   | Prioridade |
-| ------ | ---------------------------------------------------------- | ---------- |
-| RF-001 | Permitir que o usuário cadastre tarefas ⚠️ EXEMPLO ⚠️ | ALTA       |
-| RF-002 | Emitir um relatório de tarefas no mês ⚠️ EXEMPLO ⚠️ | MÉDIA     |
+| ID     | Descrição do Requisito                                                | Prioridade |
+| ------ | --------------------------------------------------------------------- | ---------- |
+| RF-001 | O sistema deve permitir o cadastro de usuários com nome, e-mail e senha. | ALTA       |
+| RF-002 | O sistema deve permitir que os usuários realizem login e logout de forma segura. | ALTA       |
+| RF-003 | O sistema deve permitir que os usuários publiquem conteúdo e interajam com postagens de outros usuários. | ALTA       |
+| RF-004 | O sistema deve permitir que os usuários denunciem conteúdos impróprios. | ALTA       |
+| RF-005 | O sistema deve permitir que os administradores editem, corrijam erros e excluam denúncias falsas. | MÉDIA      |
+| RF-006 | O sistema deve permitir que os usuários consultem seu histórico de interações e atividades na plataforma. | MÉDIA      |
+| RF-007 | O sistema deve enviar notificações para os usuários sobre atualizações e interações relevantes. | MÉDIA      |
+| RF-008 | O sistema deve oferecer um sistema de busca para encontrar conteúdos e usuários. | MÉDIA      |
 
-### Requisitos não Funcionais
+### Requisitos Não Funcionais
 
-| ID      | Descrição do Requisito                                                              | Prioridade |
-| ------- | ------------------------------------------------------------------------------------- | ---------- |
-| RNF-001 | O sistema deve ser responsivo para rodar em um dispositivos móvel ⚠️ EXEMPLO ⚠️ | MÉDIA     |
-| RNF-002 | Deve processar requisições do usuário em no máximo 3s ⚠️ EXEMPLO ⚠️          | BAIXA      |
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Os requisitos de um projeto são classificados em dois grupos:
->
-> - [Requisitos Funcionais (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
->   correspondem a uma funcionalidade que deve estar presente na plataforma (ex: cadastro de usuário).
-> - [Requisitos Não Funcionais (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
->   correspondem a uma característica técnica, seja de usabilidade, desempenho, confiabilidade, segurança ou outro (ex: suporte a dispositivos iOS e Android).
->
-> Lembre-se que cada requisito deve corresponder à uma e somente uma característica alvo da sua solução. Além disso, certifique-se de que todos os aspectos capturados nas Histórias de Usuário foram cobertos.
->
-> **Orientações**:
->
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+| ID      | Descrição do Requisito                                                             | Prioridade |
+| ------- | -------------------------------------------------------------------------------- | ---------- |
+| RNF-001 | O sistema deve estar disponível 24 horas por dia, 7 dias por semana.             | ALTA       |
+| RNF-002 | O sistema deve apresentar um tempo de resposta inferior a 3 segundos em condições normais de uso. | ALTA       |
+| RNF-003 | O sistema deve ser responsivo e adaptável a diferentes dispositivos, incluindo smartphones e desktops. | ALTA       |
+| RNF-004 | O sistema deve garantir a segurança dos dados dos usuários por meio de criptografia. | ALTA       |
+| RNF-005 | O sistema deve possuir mecanismos de recuperação de senha para usuários.         | MÉDIA      |
+| RNF-006 | O sistema deve armazenar e recuperar dados de forma eficiente para garantir a integridade das informações. | MÉDIA      |
+| RNF-007 | O sistema deve permitir escalabilidade para suportar um grande número de usuários simultâneos. | MÉDIA      |
+| RNF-008 | O sistema deve realizar backups automáticos para evitar perda de dados em caso de falhas. | BAIXA      |
 
 ## Projeto de Interface
 
