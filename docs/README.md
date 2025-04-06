@@ -52,6 +52,7 @@ Detalhes sobre o espaço de problema, os objetivos do projeto, sua justificativa
 ## Público-Alvo
 
 **✳️✳️✳️O público-alvo que irá utilizar o Software serão pessoas adultas, preocupadas com a segurança e velocidade do processo dos bombeiros, preocupadas com o meio ambiente e e que querem acompanhar as denúncias em andamento e resolvidas pelo CBMMG.✳️✳️✳️**
+
 # Product Discovery
 
 ## Etapa de Entendimento
@@ -161,7 +162,7 @@ Descrição para a tela XPTO
 
 ### Protótipo Interativo
 
-**✳️✳️✳️ [Protótipo Interativo (Figma)]()https://www.figma.com/design/ye4YEljIlmBsrYQNqR1l2V/Untitled?node-id=1-2771&m=dev&t=lcpg5mlHBvPtItU0-1 ✳️✳️✳️**
+**✳️✳️✳️ [Protótipo Interativo (Figma)]()https://www.figma.com/design/ye4YEljIlmBsrYQNqR1l2V/Untitled?node-id=1-2771&t=hairN469wtgXVMPW-1✳️✳️✳️**
 
 # Metodologia
 
