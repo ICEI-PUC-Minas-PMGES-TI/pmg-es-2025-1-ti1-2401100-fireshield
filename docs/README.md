@@ -131,50 +131,37 @@ Artefatos relacionados com a interface e a interacão do usuário na proposta de
 
 Estes são os protótipos de telas do sistema.
 
-**✳️✳️✳️ COLOQUE AQUI OS PROTÓTIPOS DE TELAS COM TÍTULO E DESCRIÇÃO ✳️✳️✳️**
+**✳️✳️✳️Descrição do Protótipo**
+  **A interface apresenta os seguintes elementos:**
+    **Cabeçalho com fundo escuro translúcido, contendo:**
+      **Um menu horizontal com as opções: Home, Serviço, Sobre nós, Suporte, Como denunciar e Contato.**
+      **Uma barra de busca centralizada com ícone de lupa.**
+      **Dois botões no canto direito: "REGISTRE-SE" e "ENTRAR", em destaque com fundo laranja.**
+  **Banner principal:**
+    **Imagem de fundo mostrando uma floresta em chamas, simbolizando o foco do sistema em queimadas ilegais.**
+   **Texto centralizado em branco com os dizeres:**
+      **"DENUNCIE QUEIMADAS ILEGAIS"**
+      **Abaixo, em fonte menor: "Ajude a combater incêndios criminosos no meio ambiente"**
+      **Um botão laranja com o texto "FAÇA UMA DENÚNCIA".**
+    **Seção de Últimas Ocorrências (logo abaixo do banner):**
+    **À esquerda, um mapa com marcadores indicando locais de ocorrência de queimadas.**
+    **À direita, um bloco de texto com título "Últimas Ocorrências" e descrição de uma ocorrência:**
+      **Destaque para o endereço: Rua Joaquim Teixeira de Morais, bairro Miramar.**
+      **Descrição textual do incidente, mencionando danos estruturais e a ausência de laudo do Corpo de Bombeiros (AVCB).✳️✳️✳️**
 
 ##### TELA XPTO ⚠️ EXEMPLO ⚠️
 
 Descrição para a tela XPTO
 
-![Exemplo de wireframe](images/exemplo-wireframe.png)
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Wireframes são protótipos das telas da aplicação usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante ao layout de elementos fundamentais na interface.
->
-> **Orientações**:
->
-> - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-> - [Figma](https://www.figma.com/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
+![TELA XPTO](image.png))
 
 ### User Flow
 
-**✳️✳️✳️ COLOQUE AQUI O DIAGRAMA DE FLUXO DE TELAS ✳️✳️✳️**
-
-![Exemplo de fluxo de telas](images/exemplo-userflow.png)
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de telas do site ou app. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
->
-> **Orientações**:
->
-> - [User Flow: O Quê É e Como Fazer?](https://medium.com/7bits/fluxo-de-usu%C3%A1rio-user-flow-o-que-%C3%A9-como-fazer-79d965872534)
-> - [User Flow vs Site Maps](http://designr.com.br/sitemap-e-user-flow-quais-as-diferencas-e-quando-usar-cada-um/)
-> - [Top 25 User Flow Tools &amp; Templates for Smooth](https://www.mockplus.com/blog/post/user-flow-tools)
+**✳️✳️✳️ ![Fluxo de Telas](image-2.png) ✳️✳️✳️**
 
 ### Protótipo Interativo
 
-**✳️✳️✳️ COLOQUE AQUI UM IFRAME COM SEU PROTÓTIPO INTERATIVO ✳️✳️✳️**
-
-✅ [Protótipo Interativo (MarvelApp)](https://marvelapp.com/prototype/4hd6091?emb=1&iosapp=false&frameless=false)  ⚠️ EXEMPLO ⚠️
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Um protótipo interativo apresenta o projeto de interfaces e permite ao usuário navegar pelas funcionalidades como se estivesse lidando com o software pronto. Utilize as mesmas ferramentas de construção de wireframes para montagem do seu protótipo interativo. Inclua o link para o protótipo interativo do projeto.
+**✳️✳️✳️ [Protótipo Interativo (Figma)]()https://www.figma.com/design/ye4YEljIlmBsrYQNqR1l2V/Untitled?node-id=1-2771&m=dev&t=lcpg5mlHBvPtItU0-1 ✳️✳️✳️**
 
 # Metodologia
 
@@ -186,15 +173,12 @@ Relação de ferramentas empregadas pelo grupo durante o projeto.
 
 | Ambiente                    | Plataforma | Link de acesso                                     |
 | --------------------------- | ---------- | -------------------------------------------------- |
-| Processo de Design Thinking | Miro       | https://miro.com/XXXXXXX ⚠️ EXEMPLO ⚠️        |
-| Repositório de código     | GitHub     | https://github.com/XXXXXXX ⚠️ EXEMPLO ⚠️      |
-| Hospedagem do site          | Render     | https://site.render.com/XXXXXXX ⚠️ EXEMPLO ⚠️ |
-| Protótipo Interativo       | MarvelApp  | https://marvelapp.com/XXXXXXX ⚠️ EXEMPLO ⚠️   |
+| Processo de Design Thinking | Miro       | https://miro.com/app/board/uXjVIaSTdRc=/?share_link_id=26320249912Links  |
+| Repositório de código     | GitHub     | https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2025-1-ti1-2401100-fireshield.git     |
+| Hospedagem do site          | Render     | XXXXXXXX |
+| Protótipo Interativo       | Figma  | https://www.figma.com/design/ye4YEljIlmBsrYQNqR1l2V/Untitled?node-id=0-1&m=dev&t=LiZypibi0Y5oIMbq-1   |
 |                             |            |                                                    |
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Liste as ferramentas empregadas no desenvolvimento do projeto, justificando a escolha delas, sempre que possível. Inclua itens como: (1) Editor de código, (2) )ferramentas de comunicação, (3) )ferramentas de diagramação, (4) )plataformas de hospedagem, entre outras.
 
 ## Gerenciamento do Projeto
 
