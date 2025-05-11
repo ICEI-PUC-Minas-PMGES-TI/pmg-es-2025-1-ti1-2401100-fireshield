@@ -1,5 +1,5 @@
 function initMap() {
-    const centro = { lat: -19.922731, lng: -43.945094 }; // Centro de BH
+    const centro = { lat: -19.922731, lng: -43.945094 }; // Centro de BH onde vai inicializar a vizualização do mapa
 
     const map = new google.maps.Map(document.getElementById("map"), {
         zoom: 13,

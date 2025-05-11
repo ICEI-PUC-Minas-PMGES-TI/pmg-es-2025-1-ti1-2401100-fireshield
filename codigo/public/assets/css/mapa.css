@@ -1,4 +1,9 @@
-
+#map {
+    height: 80vh;
+    width: 100%;
+    background-image: url('https://example.com/imagem-do-mapa.jpg'); /* Substitua pelo URL da imagem do mapa */
+    background-size: cover;
+  }
 body {
     font-family: Arial, sans-serif;
     margin: 0;
