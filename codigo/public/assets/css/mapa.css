@@ -1,8 +1,6 @@
 #map {
     height: 80vh;
     width: 100%;
-    background-image: url('https://example.com/imagem-do-mapa.jpg'); /* Substitua pelo URL da imagem do mapa */
-    background-size: cover;
   }
 body {
     font-family: Arial, sans-serif;
@@ -16,3 +14,21 @@ header {
     color: white;
     text-align: center;
 }
+.voltar-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 15px;
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+
+  .voltar-btn:hover {
+    background-color: #b71c1c;
+  }
