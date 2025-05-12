@@ -1,10 +1,11 @@
-function initMap() {
+
     const centro = { lat: -19.922731, lng: -43.945094 }; // Centro de BH onde vai inicializar a vizualização do mapa
 
-    const map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 13,
-        center: centro
-    });
+    const map = L.map('map').setView(centro, 13);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap contributors'
+    }).addTo(map);
 
     const denuncias = [
         {
@@ -45,18 +46,7 @@ function initMap() {
     ];
 
     denuncias.forEach(denuncia => {
-        const marker = new google.maps.Marker({
-            position: { lat: denuncia.lat, lng: denuncia.lng },
-            map: map,
-            title: denuncia.titulo
-        });
+        const marker = L.marker([denuncia.lat, denuncia.lng]).addTo(map);
+  marker.bindPopup(`<strong>${denuncia.titulo}</strong>`);
+});
 
-        const info = new google.maps.InfoWindow({
-            content: `<strong>${denuncia.titulo}</strong>`
-        });
-
-        marker.addListener("click", () => {
-            info.open(map, marker);
-        });
-    });
-}
