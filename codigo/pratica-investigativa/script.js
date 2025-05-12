@@ -1,6 +1,5 @@
 window.onload = function () {
     alert("Aviso: Os dados exibidos nesta página são fictícios.");
-
     const data = new Date();
     const formatData = data.toLocaleDateString();
     const hora = data.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
