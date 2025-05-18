@@ -122,6 +122,41 @@
   © Todos os direitos reservados aos alunos.
 </footer>
 
+<script>
+  document.getElementById('register-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const nome = document.getElementById('nome').value;
+    const email = document.getElementById('Email').value;
+    const cpf = document.getElementById('cpf').value;
+    const pais = document.getElementById('pais').value;
+    const estado = document.getElementById('estado').value;
+    const rua = document.getElementById('rua').value;
+    const cidade = document.getElementById('cidade').value;
+    const senha = document.getElementById('senha').value;
+
+    const identidade = document.getElementById('identidade').files[0];
+
+    // Salva o nome do arquivo da identidade (caso queira mostrar depois)
+    const user = {
+      nome,
+      email,
+      cpf,
+      pais,
+      estado,
+      rua,
+      cidade,
+      senha,
+      identidade: identidade ? identidade.name : ''
+    };
+
+    // Salva no localStorage
+    localStorage.setItem(`user_${cpf}`, JSON.stringify(user));
+    alert('Cadastro realizado com sucesso!');
+    window.location.href = 'login.html';
+  });
+</script>
+
 <script src="assets/css/style.css"></script>
 
 </body>
