@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Administração do Sistema</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .admin-container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      font-family: Arial, sans-serif;
+    }
+
+    .admin-container h2 {
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f0f0f0;
+    }
+
+    .logout-btn {
+      margin-bottom: 20px;
+      background-color: #d9534f;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="admin-container">
+  <h2>Olá Administrador do Sistema</h2>
+  <button class="logout-btn" onclick="logout()">Efetuar Logout</button>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Login (CPF)</th>
+        <th>E-mail</th>
+      </tr>
+    </thead>
+    <tbody id="user-table-body">
+      <!-- Usuários serão inseridos aqui via JS -->
+    </tbody>
+  </table>
+</div>
+
+<script>
+  function logout() {
+    localStorage.removeItem('logado');
+    localStorage.removeItem('usuario_logado');
+    window.location.href = 'login.html';
+  }
+
+  // Verifica se é admin
+ // const usuarioLogado = localStorage.getItem('usuario_logado');
+  //if (usuarioLogado !== "12345678910") {
+    //alert("Acesso negado. Apenas administradores.");
+    //window.location.href = "index.html";
+  }
+
+  // Listar usuários salvos no localStorage
+  const tbody = document.getElementById('user-table-body');
+  Object.keys(localStorage).forEach(key => {
+    if (key.startsWith('user_')) {
+      const user = JSON.parse(localStorage.getItem(key));
+      const tr = document.createElement('tr');
+      tr.innerHTML = `
+        <td>${user.nome}</td>
+        <td>${user.cpf}</td>
+        <td>${user.email || user.Email || 'Sem email'}</td>
+      `;
+      tbody.appendChild(tr);
+    }
+  });
+</script>
+
+</body>
+</html>
