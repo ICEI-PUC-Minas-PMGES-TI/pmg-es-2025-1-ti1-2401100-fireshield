@@ -1,100 +1,90 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Administração do Sistema</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin - Usuários Registrados</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
   <style>
-    .admin-container {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 20px;
-      background-color: #fff;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      font-family: Arial, sans-serif;
-    }
-
-    .admin-container h2 {
-      margin-bottom: 20px;
-    }
-
     table {
-      width: 100%;
+      width: 90%;
+      margin: 20px auto;
       border-collapse: collapse;
+      background-color: #f9f9f9;
     }
-
     th, td {
-      padding: 10px;
-      border-bottom: 1px solid #ccc;
-      text-align: left;
+      padding: 12px;
+      border: 1px solid #ccc;
+      text-align: center;
     }
-
     th {
-      background-color: #f0f0f0;
+      background-color: #333;
+      color: #fff;
     }
-
     .logout-btn {
-      margin-bottom: 20px;
-      background-color: #d9534f;
+      margin: 20px;
+      padding: 10px 20px;
+      background-color: #c00;
       color: white;
       border: none;
-      padding: 8px 12px;
       cursor: pointer;
-      border-radius: 4px;
     }
   </style>
 </head>
 <body>
-
-<div class="admin-container">
-  <h2>Olá Administrador do Sistema</h2>
+  <h2 style="text-align:center;">Olá Administrador do Sistema</h2>
   <button class="logout-btn" onclick="logout()">Efetuar Logout</button>
 
   <table>
     <thead>
       <tr>
+        <th>#</th>
         <th>Nome</th>
-        <th>Login (CPF)</th>
-        <th>E-mail</th>
+        <th>CPF</th>
+        <th>Email</th>
+        <th>Cidade</th>
+        <th>Estado</th>
+        <th>País</th>
       </tr>
     </thead>
-    <tbody id="user-table-body">
-      <!-- Usuários serão inseridos aqui via JS -->
+    <tbody id="tabela-usuarios">
+      <!-- Usuários serão inseridos aqui via JavaScript -->
     </tbody>
   </table>
-</div>
 
-<script>
-  function logout() {
-    localStorage.removeItem('logado');
-    localStorage.removeItem('usuario_logado');
-    window.location.href = 'login.html';
-  }
-
-  // Verifica se é admin
- // const usuarioLogado = localStorage.getItem('usuario_logado');
-  //if (usuarioLogado !== "12345678910") {
-    //alert("Acesso negado. Apenas administradores.");
-    //window.location.href = "index.html";
-  }
-
-  // Listar usuários salvos no localStorage
-  const tbody = document.getElementById('user-table-body');
-  Object.keys(localStorage).forEach(key => {
-    if (key.startsWith('user_')) {
-      const user = JSON.parse(localStorage.getItem(key));
-      const tr = document.createElement('tr');
-      tr.innerHTML = `
-        <td>${user.nome}</td>
-        <td>${user.cpf}</td>
-        <td>${user.email || user.Email || 'Sem email'}</td>
-      `;
-      tbody.appendChild(tr);
+  <script>
+    function logout() {
+      localStorage.clear();
+      window.location.href = 'login.html';
     }
-  });
-</script>
 
+    // Verifica se é admin
+    //if (localStorage.getItem('admin') !== 'true') {
+    //  alert('Acesso restrito. Somente administradores podem acessar.');
+    //  window.location.href = 'index.html';
+    //}
+
+    // Carrega usuários do localStorage
+    const usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
+    const tbody = document.getElementById('tabela-usuarios');
+
+    if (usuarios.length === 0) {
+      tbody.innerHTML = '<tr><td colspan="7">Nenhum usuário registrado.</td></tr>';
+    } else {
+      usuarios.forEach((usuario, index) => {
+        const linha = document.createElement('tr');
+        linha.innerHTML = `
+          <td>${index + 1}</td>
+          <td>${usuario.nome}</td>
+          <td>${usuario.cpf}</td>
+          <td>${usuario.email}</td>
+          <td>${usuario.cidade}</td>
+          <td>${usuario.estado}</td>
+          <td>${usuario.pais}</td>
+        `;
+        tbody.appendChild(linha);
+      });
+    }
+  </script>
 </body>
 </html>

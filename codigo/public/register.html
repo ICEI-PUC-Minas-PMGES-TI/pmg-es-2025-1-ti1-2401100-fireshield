@@ -123,41 +123,41 @@
 </footer>
 
 <script>
-  document.getElementById('register-form').addEventListener('submit', function(event) {
-    event.preventDefault();
+document.getElementById('register-form').addEventListener('submit', function (event) {
+  event.preventDefault();
 
-    const nome = document.getElementById('nome').value;
-    const email = document.getElementById('Email').value;
-    const cpf = document.getElementById('cpf').value;
-    const pais = document.getElementById('pais').value;
-    const estado = document.getElementById('estado').value;
-    const rua = document.getElementById('rua').value;
-    const cidade = document.getElementById('cidade').value;
-    const senha = document.getElementById('senha').value;
+  const nome = document.getElementById('nome').value;
+  const email = document.getElementById('Email').value;
+  const cpf = document.getElementById('cpf').value;
+  const cidade = document.getElementById('cidade').value;
+  const estado = document.getElementById('estado').value;
+  const pais = document.getElementById('pais').value;
+  const senha = document.getElementById('senha').value;
 
-    const identidade = document.getElementById('identidade').files[0];
+  const novoUsuario = {
+    nome,
+    email,
+    cpf,
+    cidade,
+    estado,
+    pais,
+    senha
+  };
 
-    // Salva o nome do arquivo da identidade (caso queira mostrar depois)
-    const user = {
-      nome,
-      email,
-      cpf,
-      pais,
-      estado,
-      rua,
-      cidade,
-      senha,
-      identidade: identidade ? identidade.name : ''
-    };
+  // Pegar usuários existentes
+  const usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
 
-    // Salva no localStorage
-    localStorage.setItem(`user_${cpf}`, JSON.stringify(user));
-    alert('Cadastro realizado com sucesso!');
-    window.location.href = 'login.html';
-  });
+  // Adicionar novo usuário
+  usuarios.push(novoUsuario);
+
+  // Salvar novamente
+  localStorage.setItem('usuarios', JSON.stringify(usuarios));
+
+  alert('Usuário registrado com sucesso!');
+  window.location.href = 'login.html';
+});
 </script>
 
-<script src="assets/css/style.css"></script>
 
 </body>
 </html>
