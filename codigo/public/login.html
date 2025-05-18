@@ -58,16 +58,30 @@ document.getElementById('login-form').addEventListener('submit', function(event)
   var cpf = document.getElementById('cpf').value;
   var senha = document.getElementById('senha').value;
 
+  // Verifica se é o admin padrão
   if (cpf === '12345678910' && senha === '123') {
     localStorage.setItem('logado', 'true');
     localStorage.setItem('admin', 'true');
+    localStorage.setItem('usuarioLogado', JSON.stringify({ nome: 'Administrador', cpf: cpf }));
     alert('Login ADMIN realizado com sucesso!');
-    window.location.href = 'index.html'; // ou outra página de admin
-  } else {
+    window.location.href = 'index.html';
+    return;
+  }
+
+  // Verifica usuários registrados
+  var usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
+  var usuarioValido = usuarios.find(function(usuario) {
+    return usuario.cpf === cpf && usuario.senha === senha;
+  });
+
+  if (usuarioValido) {
     localStorage.setItem('logado', 'true');
+    localStorage.setItem('usuarioLogado', JSON.stringify(usuarioValido));
     localStorage.removeItem('admin');
     alert('Login realizado com sucesso!');
     window.location.href = 'index.html';
+  } else {
+    alert('CPF ou senha incorretos.');
   }
 });
 </script>
