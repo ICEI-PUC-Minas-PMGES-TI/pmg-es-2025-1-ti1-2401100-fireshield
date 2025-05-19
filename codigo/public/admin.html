@@ -59,10 +59,11 @@
     }
 
     // Verifica se é admin
-    //if (localStorage.getItem('admin') !== 'true') {
-    //  alert('Acesso restrito. Somente administradores podem acessar.');
-    //  window.location.href = 'index.html';
-    //}
+    const isAdmin = localStorage.getItem('admin');
+  if (isAdmin !== 'true') {
+    alert("Acesso restrito.");
+    window.location.href = 'index.html';
+  }
 
     // Carrega usuários do localStorage
     const usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];

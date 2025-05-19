@@ -12,14 +12,14 @@
   <nav class="navbar">
     <div class="logo">FireShield</div>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="serviço.html">Serviço</a></li>
-      <li><a href="sobre_nos.html">Sobre nós</a></li>
-      <li><a href="suporte.html">Suporte</a></li>
-      <li><a href="como_denunciar.html">Como denunciar</a></li>
-      <li><a href="#">Contato</a></li>
-      <li><a href="maps.html">Mapa</a></li>
-    </ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="serviço.html">Serviço</a></li>
+  <li><a href="sobre_nos.html">Sobre nós</a></li>
+  <li><a href="suporte.html">Suporte</a></li>
+  <li><a href="como_denunciar.html">Como denunciar</a></li>
+  <li><a href="#">Contato</a></li>
+  <li id="admin-link" style="display: none;"><a href="admin.html">Admin</a></li>
+  </ul>
     
     <div id="perfil-container" class="perfil-container"></div>
   </nav>
@@ -93,5 +93,11 @@
     }
   });
   </script>
+  <script>
+  const isAdmin = localStorage.getItem('admin') === 'true';
+  if (isAdmin) {
+    document.getElementById('admin-link').style.display = 'inline';
+  }
+</script>
 </body>
 </html>
