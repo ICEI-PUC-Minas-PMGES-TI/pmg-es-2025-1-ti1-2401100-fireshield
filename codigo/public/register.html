@@ -92,7 +92,6 @@
         </div>
       </div>
 
-      <!-- Rua nova adicionada -->
       <div class="form-group">
         <label for="rua">Rua:</label>
         <input type="text" id="rua" name="rua" required>
@@ -150,7 +149,7 @@ document.getElementById('register-form').addEventListener('submit', function (ev
   // Adicionar novo usuário
   usuarios.push(novoUsuario);
 
-  // Salvar novamente
+  // Salvar no LocalStorage
   localStorage.setItem('usuarios', JSON.stringify(usuarios));
 
   alert('Usuário registrado com sucesso!');
