@@ -1,94 +1,85 @@
-.perfil-container {
-  max-width: 600px;
-  margin: auto;
-  padding: 20px;
-  background: #f4f4f4;
-  border-radius: 8px;
-}
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+      margin: 0;
+      padding: 0;
+    }
 
-.perfil-container input {
-  width: 100%;
-  padding: 8px;
-  margin: 5px 0;
-}
-    .foto-preview {
+    header {
+      background-color: #222;
+      color: white;
+      padding: 15px;
+    }
+
+    .perfil-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 30px;
+      gap: 30px;
+    }
+
+    .info-usuario, .denuncias-usuario {
+      flex: 1;
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .info-usuario h2, .denuncias-usuario h2 {
+      margin-bottom: 15px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 10px;
+    }
+
+    .info-usuario p {
+      margin: 10px 0;
+    }
+
+    .perfil-foto {
       width: 120px;
       height: 120px;
-      border-radius: 50%;
       object-fit: cover;
-      margin-bottom: 1rem;
+      border-radius: 50%;
+      margin-bottom: 15px;
     }
-    .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: gray;
-  color: black;
-  padding: 10px 20px;
-}
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
+    .btn {
+      padding: 10px 16px;
+      border: none;
+      border-radius: 6px;
+      background-color: #d33;
+      color: white;
+      cursor: pointer;
+      margin-top: 15px;
+    }
 
-.nav-links {
-  display: flex;
-  gap: 15px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
+    .btn-editar {
+      background-color: #007bff;
+    }
 
-.nav-links li a {
-  color: black;
-  text-decoration: none;
-  transition: color 0.3s;
-}
+    .btn-deletar {
+      background-color: #dc3545;
+    }
 
-.nav-links li a:hover {
-  color: #f00;
-}
+    .denuncia-item {
+      background-color: #fafafa;
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 6px;
+      position: relative;
+    }
 
-.perfil-menu {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
-.perfil-icone {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.perfil-opcoes {
-  position: absolute;
-  top: 40px;
-  right: 0;
-  background: black;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  display: none;
-  padding: 5px;
-  z-index: 1000;
-}
-
-.perfil-opcoes a,
-.perfil-opcoes button {
-  display: block;
-  padding: 8px 12px;
-  text-decoration: none;
-  color: #333;
-  background: none;
-  border: none;
-  width: 100%;
-  text-align: left;
-  cursor: pointer;
-}
-
-.perfil-opcoes a:hover,
-.perfil-opcoes button:hover {
-  background-color: black;
-}
+    .btn-excluir-denuncia {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: #dc3545;
+      color: white;
+      border: none;
+      padding: 5px 8px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 0.8rem;
+    }
