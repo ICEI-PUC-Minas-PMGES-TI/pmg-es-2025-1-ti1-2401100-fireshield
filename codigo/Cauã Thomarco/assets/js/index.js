@@ -1,4 +1,4 @@
-<script>
+
   document.addEventListener('DOMContentLoaded', function() {
     var perfilContainer = document.getElementById('perfil-container');
     var logado = localStorage.getItem('logado');
@@ -36,4 +36,3 @@
       `;
     }
   });
-</script>
