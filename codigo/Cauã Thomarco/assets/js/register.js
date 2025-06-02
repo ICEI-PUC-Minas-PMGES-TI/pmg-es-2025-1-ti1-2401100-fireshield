@@ -8,6 +8,7 @@ document.getElementById('register-form').addEventListener('submit', async functi
     cidade: document.getElementById('cidade').value,
     estado: document.getElementById('estado').value,
     pais: document.getElementById('pais').value,
+    identidade: document.getElementById('identidade').value,
     rua: document.getElementById('rua').value,
     senha: document.getElementById('senha').value
   };
