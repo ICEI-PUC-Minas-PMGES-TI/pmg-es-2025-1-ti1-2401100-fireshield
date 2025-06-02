@@ -9,6 +9,7 @@ document.getElementById('login-form').addEventListener('submit', async function 
 
   if (users.length > 0) {
     localStorage.setItem('logado', 'true');
+    localStorage.setItem('cpfLogado', usuarioEncontrado.cpf);
     localStorage.setItem('usuarioId', users[0].id); // Importante para buscar no perfil
     alert("Login realizado com sucesso!");
     window.location.href = "index.html";
