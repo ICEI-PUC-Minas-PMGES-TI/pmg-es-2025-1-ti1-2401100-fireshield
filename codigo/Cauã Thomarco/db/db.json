@@ -1,4 +1,16 @@
 {
-  "usuarios": [],
+  "usuarios": [
+    {
+      "id": "c8c5",
+      "nome": "Cauã Thomarco",
+      "email": "cauathomarco@gmail.com",
+      "cpf": "14406119639",
+      "cidade": "Pedro Leopoldo",
+      "estado": "MG",
+      "pais": "Brasil",
+      "rua": "Rua Padre Sinfronio Torres de Freitas - 199",
+      "senha": "1011"
+    }
+  ],
   "denuncias": []
 }
