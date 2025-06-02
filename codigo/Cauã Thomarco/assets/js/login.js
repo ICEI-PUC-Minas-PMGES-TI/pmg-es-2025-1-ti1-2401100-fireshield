@@ -13,7 +13,7 @@ document.getElementById('login-form').addEventListener('submit', async function 
     if (usuario) {
       // Salva dados no localStorage
       localStorage.setItem('logado', 'true');
-      localStorage.setItem('usuarioId', usuario.id); // importante para o perfil
+      localStorage.setItem('userId', usuario.id); // importante para o perfil
       localStorage.setItem('usuarioNome', usuario.nome);
       localStorage.setItem('usuarioEmail', usuario.email);
       localStorage.setItem('usuarioCpf', usuario.cpf);
