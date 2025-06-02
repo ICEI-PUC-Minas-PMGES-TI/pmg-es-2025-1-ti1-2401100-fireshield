@@ -2,41 +2,43 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Perfil do Usuário</title>
-  <link rel="stylesheet" href="assets/css/perfil.css">
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-
   <div class="perfil-container">
     <h2>Perfil do Usuário</h2>
-    <img id="fotoPreview" src="assets/img/default-profile.png" class="foto-preview" alt="Foto de Perfil">
+    <img id="foto-preview" class="foto-preview" src="assets/img/perfil-icon.png" alt="Foto de Perfil" />
+    <input type="file" id="foto" accept="image/*" disabled />
 
     <form id="perfil-form">
-      <input type="file" id="foto" accept="image/*"><br><br>
-
       <label>Nome:</label>
-      <input type="text" id="nome" readonly><br><br>
+      <input type="text" id="nome" disabled required />
 
       <label>Email:</label>
-      <input type="email" id="email" readonly><br><br>
+      <input type="email" id="email" disabled required />
 
       <label>CPF:</label>
-      <input type="text" id="cpf" readonly><br><br>
+      <input type="text" id="cpf" disabled required />
 
       <label>Cidade:</label>
-      <input type="text" id="cidade" readonly><br><br>
+      <input type="text" id="cidade" disabled required />
 
       <label>Estado:</label>
-      <input type="text" id="estado" readonly><br><br>
+      <input type="text" id="estado" disabled required />
+
+      <label>Rua:</label>
+      <input type="text" id="rua" disabled required />
 
       <label>País:</label>
-      <input type="text" id="pais" readonly><br><br>
+      <input type="text" id="pais" disabled required />
 
-      <button type="button" id="editar-btn">Editar Perfil</button>
-      <button type="submit" style="display:none;" id="salvar-btn">Salvar Alterações</button>
+      <div style="margin-top: 1rem;">
+        <button type="button" id="editar-btn">Editar Perfil</button>
+        <button type="submit" id="salvar-btn" disabled>Salvar Alterações</button>
+      </div>
     </form>
   </div>
-  <script src="assets/js/perfil.js"></script>
 </body>
 </html>
