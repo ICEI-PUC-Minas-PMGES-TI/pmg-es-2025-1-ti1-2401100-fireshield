@@ -1,109 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Admin - Usuários Registrados</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <style>
-    table {
-      width: 90%;
-      margin: 20px auto;
-      border-collapse: collapse;
-      background-color: #f9f9f9;
-    }
-    th, td {
-      padding: 12px;
-      border: 1px solid #ccc;
-      text-align: center;
-    }
-    th {
-      background-color: #333;
-      color: #fff;
-    }
-    .logout-btn {
-      margin: 20px;
-      padding: 10px 20px;
-      background-color: #c00;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <title>Painel Admin - Usuários Registrados</title>
+  <link rel="stylesheet" href="assets/css/admin.css">
 </head>
-
-<header>
-  <nav class="navbar">
-    <div class="logo">FireShield</div>
-    <ul class="nav-links">
-  <li><a href="index.html">Home</a></li>
-  <li><a href="serviço.html">Serviço</a></li>
-  <li><a href="sobre_nos.html">Sobre nós</a></li>
-  <li><a href="suporte.html">Suporte</a></li>
-  <li><a href="#">Contato</a></li>
-  <li><a href="maps.html">Mapa</a></li>
-  <li id="admin-link" style="display: none;"><a href="admin.html">Admin</a></li>
-  </ul>
-    
-    <div id="perfil-container" class="perfil-container"></div>
-  </nav>
-</header>
-
 <body>
-  <h2 style="text-align:center;">Olá Administrador do Sistema</h2>
-  <button class="logout-btn" onclick="logout()">Efetuar Logout</button>
+  <h1>Lista de Usuários Registrados</h1>
 
-  <table>
+  <table id="tabela-usuarios">
     <thead>
       <tr>
-        <th>#</th>
         <th>Nome</th>
-        <th>CPF</th>
         <th>Email</th>
+        <th>CPF</th>
         <th>Cidade</th>
         <th>Estado</th>
         <th>País</th>
+        <th>Admin?</th>
       </tr>
     </thead>
-    <tbody id="tabela-usuarios">
-      <!-- Usuários serão inseridos aqui via JavaScript -->
+    <tbody>
+      <!-- Os usuários serão inseridos aqui -->
     </tbody>
   </table>
 
-  <script>
-    function logout() {
-      localStorage.clear();
-      window.location.href = 'login.html';
-    }
-
-    // Verifica se é admin
-    const isAdmin = localStorage.getItem('admin');
-  //if (isAdmin !== 'true') {
-   // alert("Acesso restrito.");
-    //window.location.href = 'index.html';
- // }
-
-    // Carrega usuários do localStorage
-    const usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
-    const tbody = document.getElementById('tabela-usuarios');
-
-    if (usuarios.length === 0) {
-      tbody.innerHTML = '<tr><td colspan="7">Nenhum usuário registrado.</td></tr>';
-    } else {
-      usuarios.forEach((usuario, index) => {
-        const linha = document.createElement('tr');
-        linha.innerHTML = `
-          <td>${index + 1}</td>
-          <td>${usuario.nome}</td>
-          <td>${usuario.cpf}</td>
-          <td>${usuario.email}</td>
-          <td>${usuario.cidade}</td>
-          <td>${usuario.estado}</td>
-          <td>${usuario.pais}</td>
-        `;
-        tbody.appendChild(linha);
-      });
-    }
-  </script>
+  <script src="assets/js/admin.js"></script>
 </body>
 </html>
