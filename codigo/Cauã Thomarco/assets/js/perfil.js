@@ -1,50 +1,44 @@
-  const cpfLogado = localStorage.getItem('cpfLogado');
-    const usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
-    const usuario = usuarios.find(u => u.cpf === cpfLogado);
+window.onload = async () => {
+  const userId = localStorage.getItem('usuarioId');
+  if (!userId) return;
 
-    //if (!usuario) {
-    //  alert("Usuário não logado!");
-    //  window.location.href = "login.html";
-    //}
+  const response = await fetch(`http://localhost:3000/usuarios/${userId}`);
+  const usuario = await response.json();
 
-    // Preencher os campos
-    document.getElementById('perfil-nome').value = usuario.nome;
-    document.getElementById('perfil-email').value = usuario.email;
-    document.getElementById('perfil-cidade').value = usuario.cidade;
-    document.getElementById('perfil-estado').value = usuario.estado;
+  document.getElementById('nome').value = usuario.nome;
+  document.getElementById('Email').value = usuario.email;
+  document.getElementById('cpf').value = usuario.cpf;
+  document.getElementById('cidade').value = usuario.cidade;
+  document.getElementById('estado').value = usuario.estado;
+  document.getElementById('rua').value = usuario.rua;
+  document.getElementById('pais').value = usuario.pais;
+};
 
-    // Atualizar dados
-    document.getElementById('perfil-form').addEventListener('submit', function (e) {
-      e.preventDefault();
+document.getElementById('form-perfil').addEventListener('submit', async function (event) {
+  event.preventDefault();
 
-      usuario.nome = document.getElementById('perfil-nome').value;
-      usuario.email = document.getElementById('perfil-email').value;
-      usuario.cidade = document.getElementById('perfil-cidade').value;
-      usuario.estado = document.getElementById('perfil-estado').value;
+  const userId = localStorage.getItem('usuarioId');
+  if (!userId) return;
 
-      const indice = usuarios.findIndex(u => u.cpf === cpfLogado);
-      usuarios[indice] = usuario;
+  const atualizado = {
+    nome: document.getElementById('nome').value,
+    email: document.getElementById('Email').value,
+    cpf: document.getElementById('cpf').value,
+    cidade: document.getElementById('cidade').value,
+    estado: document.getElementById('estado').value,
+    rua: document.getElementById('rua').value,
+    pais: document.getElementById('pais').value
+  };
 
-      localStorage.setItem('usuarios', JSON.stringify(usuarios));
-      alert('Dados atualizados com sucesso!');
-    });
+  const response = await fetch(`http://localhost:3000/usuarios/${userId}`, {
+    method: "PUT",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(atualizado)
+  });
 
-    // Carregar denúncias do usuário
-    const todasDenuncias = JSON.parse(localStorage.getItem('denuncias')) || [];
-    const minhasDenuncias = todasDenuncias.filter(d => d.cpf === cpfLogado);
-
-    const lista = document.getElementById('lista-denuncias');
-    if (minhasDenuncias.length === 0) {
-      lista.innerHTML = "<p>Você ainda não realizou nenhuma denúncia.</p>";
-    } else {
-      minhasDenuncias.forEach(d => {
-        const div = document.createElement('div');
-        div.className = 'denuncia-item';
-        div.innerHTML = `
-          <strong>Título:</strong> ${d.titulo || 'Sem título'}<br>
-          <strong>Descrição:</strong> ${d.descricao || 'Sem descrição'}<br>
-          <strong>Data:</strong> ${d.data || 'Indefinida'}
-        `;
-        lista.appendChild(div);
-      });
-    }
+  if (response.ok) {
+    alert("Dados atualizados!");
+  } else {
+    alert("Erro ao atualizar.");
+  }
+});
