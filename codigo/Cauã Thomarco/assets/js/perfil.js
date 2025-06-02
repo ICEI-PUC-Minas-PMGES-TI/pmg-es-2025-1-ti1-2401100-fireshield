@@ -1,97 +1,55 @@
+document.addEventListener('DOMContentLoaded', async function () {
+  const usuarioId = localStorage.getItem('usuarioId');
+  if (!usuarioId) {
+    alert("Você precisa estar logado para acessar o perfil.");
+    window.location.href = 'login.html';
+    return;
+  }
 
-    const cpfLogado = localStorage.getItem('cpfLogado');
-    const form = document.getElementById('perfil-form');
-    const editarBtn = document.getElementById('editar-btn');
-    const salvarBtn = document.getElementById('salvar-btn');
-    const fotoInput = document.getElementById('foto');
-    const fotoPreview = document.getElementById('foto-preview');
-    let usuarioId = null;
+  try {
+    const resposta = await fetch(`http://localhost:3000/usuarios/${usuarioId}`);
+    const usuario = await resposta.json();
 
-    // Carregar dados do usuário
-    window.onload = async () => {
-      if (!cpfLogado) {
-        alert("Você precisa estar logado para acessar o perfil.");
-        window.location.href = "login.html";
-        return;
-      }
+    // Preenche os dados na tela
+    document.getElementById('nome').value = usuario.nome;
+    document.getElementById('email').value = usuario.email;
+    document.getElementById('cpf').value = usuario.cpf;
+    document.getElementById('cidade').value = usuario.cidade;
+    document.getElementById('estado').value = usuario.estado;
+    document.getElementById('pais').value = usuario.pais;
+    document.getElementById('rua').value = usuario.rua;
+    document.getElementById('fotoPerfilPreview').src = usuario.fotoPerfil || 'assets/img/perfil-icon.png';
 
-      try {
-        const res = await fetch(`http://localhost:3000/usuarios?cpf=${cpfLogado}`);
-        const data = await res.json();
+    // Bloqueia os campos até clicar em Editar
+    document.querySelectorAll('input').forEach(input => input.disabled = true);
 
-        if (data.length === 0) {
-          alert("Usuário não encontrado.");
-          return;
-        }
-
-        const user = data[0];
-        usuarioId = user.id;
-
-        document.getElementById('nome').value = user.nome;
-        document.getElementById('email').value = user.email;
-        document.getElementById('cpf').value = user.cpf;
-        document.getElementById('cidade').value = user.cidade;
-        document.getElementById('estado').value = user.estado;
-        document.getElementById('rua').value = user.rua;
-        document.getElementById('pais').value = user.pais;
-        if (user.foto) {
-          fotoPreview.src = user.foto;
-        }
-      } catch (error) {
-        console.error("Erro ao carregar dados:", error);
-      }
-    };
-
-    // Ativar edição
-    editarBtn.addEventListener('click', () => {
-      [...form.elements].forEach(el => el.disabled = false);
-      salvarBtn.disabled = false;
+    document.getElementById('editarBtn').addEventListener('click', () => {
+      document.querySelectorAll('input').forEach(input => input.disabled = false);
     });
 
-    // Salvar alterações
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-
-      const fotoBase64 = await getBase64(fotoInput.files[0]);
-
-      const dadosAtualizados = {
+    document.getElementById('salvarBtn').addEventListener('click', async () => {
+      const novosDados = {
         nome: document.getElementById('nome').value,
         email: document.getElementById('email').value,
         cpf: document.getElementById('cpf').value,
         cidade: document.getElementById('cidade').value,
         estado: document.getElementById('estado').value,
-        rua: document.getElementById('rua').value,
         pais: document.getElementById('pais').value,
-        foto: fotoBase64 || fotoPreview.src
+        rua: document.getElementById('rua').value,
+        fotoPerfil: document.getElementById('fotoPerfil').value // Ex: URL ou Base64
       };
 
-      try {
-        const res = await fetch(`http://localhost:3000/usuarios/${usuarioId}`, {
-          method: 'PUT',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify(dadosAtualizados)
-        });
-
-        if (res.ok) {
-          alert("Perfil atualizado com sucesso!");
-          window.location.reload();
-        } else {
-          alert("Erro ao atualizar perfil.");
-        }
-      } catch (error) {
-        console.error("Erro na atualização:", error);
-      }
-    });
-
-    // Função para transformar a imagem em Base64
-    function getBase64(file) {
-      return new Promise((resolve, reject) => {
-        if (!file) return resolve(null);
-        const reader = new FileReader();
-        reader.onload = () => resolve(reader.result);
-        reader.onerror = reject;
-        reader.readAsDataURL(file);
+      await fetch(`http://localhost:3000/usuarios/${usuarioId}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(novosDados)
       });
-    }
+
+      alert('Perfil atualizado com sucesso!');
+      location.reload();
+    });
+  } catch (error) {
+    console.error("Erro ao carregar dados do perfil:", error);
+    alert("Erro ao buscar dados do usuário.");
+  }
+});

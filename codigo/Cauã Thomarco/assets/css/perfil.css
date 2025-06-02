@@ -1,16 +1,16 @@
+.perfil-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background: #f4f4f4;
+  border-radius: 8px;
+}
 
-    .perfil-container {
-      max-width: 600px;
-      margin: 2rem auto;
-      padding: 2rem;
-      background-color: #f5f5f5;
-      border-radius: 10px;
-    }
-
-    .perfil-container input:disabled {
-      background-color: #ddd;
-    }
-
+.perfil-container input {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+}
     .foto-preview {
       width: 120px;
       height: 120px;
