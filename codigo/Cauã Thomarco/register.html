@@ -121,42 +121,7 @@
   © Todos os direitos reservados aos alunos.
 </footer>
 
-<script>
-document.getElementById('register-form').addEventListener('submit', function (event) {
-  event.preventDefault();
-
-  const nome = document.getElementById('nome').value;
-  const email = document.getElementById('Email').value;
-  const cpf = document.getElementById('cpf').value;
-  const cidade = document.getElementById('cidade').value;
-  const estado = document.getElementById('estado').value;
-  const pais = document.getElementById('pais').value;
-  const senha = document.getElementById('senha').value;
-
-  const novoUsuario = {
-    nome,
-    email,
-    cpf,
-    cidade,
-    estado,
-    pais,
-    senha
-  };
-
-  // Pegar usuários existentes
-  const usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
-
-  // Adicionar novo usuário
-  usuarios.push(novoUsuario);
-
-  // Salvar no LocalStorage
-  localStorage.setItem('usuarios', JSON.stringify(usuarios));
-
-  alert('Usuário registrado com sucesso!');
-  window.location.href = 'login.html';
-});
-</script>
-
+<script src="assets/js/register.js"></script>
 
 </body>
 </html>
