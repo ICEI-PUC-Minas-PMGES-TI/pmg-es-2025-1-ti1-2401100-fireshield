@@ -36,3 +36,8 @@
       `;
     }
   });
+  const msg = sessionStorage.getItem('mensagemLogin');
+  if (msg) {
+    alert(msg);
+    sessionStorage.removeItem('mensagemLogin');
+  }
