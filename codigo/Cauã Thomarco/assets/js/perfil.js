@@ -1,44 +1,70 @@
-window.onload = async () => {
-  const userId = localStorage.getItem('usuarioId');
-  if (!userId) return;
+const API_URL = "http://localhost:3000/usuarios";
+let usuarioAtual = null;
 
-  const response = await fetch(`http://localhost:3000/usuarios/${userId}`);
-  const usuario = await response.json();
+// Função para carregar os dados
+async function carregarPerfil() {
+  const cpfLogado = localStorage.getItem('cpfLogado');
+  const res = await fetch(`${API_URL}?cpf=${cpfLogado}`);
+  const dados = await res.json();
+  usuarioAtual = dados[0];
 
-  document.getElementById('nome').value = usuario.nome;
-  document.getElementById('Email').value = usuario.email;
-  document.getElementById('cpf').value = usuario.cpf;
-  document.getElementById('cidade').value = usuario.cidade;
-  document.getElementById('estado').value = usuario.estado;
-  document.getElementById('rua').value = usuario.rua;
-  document.getElementById('pais').value = usuario.pais;
-};
+  if (usuarioAtual) {
+    document.getElementById("nome").value = usuarioAtual.nome;
+    document.getElementById("email").value = usuarioAtual.email;
+    document.getElementById("cpf").value = usuarioAtual.cpf;
+    document.getElementById("cidade").value = usuarioAtual.cidade;
+    document.getElementById("estado").value = usuarioAtual.estado;
+    document.getElementById("pais").value = usuarioAtual.pais;
+    document.getElementById("fotoPreview").src = usuarioAtual.foto || "assets/img/default-profile.png";
+  }
+}
 
-document.getElementById('form-perfil').addEventListener('submit', async function (event) {
+document.getElementById('editar-btn').addEventListener('click', () => {
+  document.querySelectorAll("#perfil-form input").forEach(input => input.removeAttribute("readonly"));
+  document.getElementById("salvar-btn").style.display = "inline";
+  document.getElementById("editar-btn").style.display = "none";
+});
+
+// Salvar alterações
+document.getElementById('perfil-form').addEventListener('submit', async function(event) {
   event.preventDefault();
 
-  const userId = localStorage.getItem('usuarioId');
-  if (!userId) return;
+  const novaFoto = document.getElementById("foto").files[0];
+  let fotoBase64 = usuarioAtual.foto;
 
-  const atualizado = {
-    nome: document.getElementById('nome').value,
-    email: document.getElementById('Email').value,
-    cpf: document.getElementById('cpf').value,
-    cidade: document.getElementById('cidade').value,
-    estado: document.getElementById('estado').value,
-    rua: document.getElementById('rua').value,
-    pais: document.getElementById('pais').value
-  };
-
-  const response = await fetch(`http://localhost:3000/usuarios/${userId}`, {
-    method: "PUT",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(atualizado)
-  });
-
-  if (response.ok) {
-    alert("Dados atualizados!");
+  if (novaFoto) {
+    const reader = new FileReader();
+    reader.onload = async function(e) {
+      fotoBase64 = e.target.result;
+      await atualizarPerfil(fotoBase64);
+    };
+    reader.readAsDataURL(novaFoto);
   } else {
-    alert("Erro ao atualizar.");
+    await atualizarPerfil(fotoBase64);
   }
 });
+
+async function atualizarPerfil(foto) {
+  const dadosAtualizados = {
+    nome: document.getElementById("nome").value,
+    email: document.getElementById("email").value,
+    cpf: document.getElementById("cpf").value,
+    cidade: document.getElementById("cidade").value,
+    estado: document.getElementById("estado").value,
+    pais: document.getElementById("pais").value,
+    foto
+  };
+
+  await fetch(`${API_URL}/${usuarioAtual.id}`, {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(dadosAtualizados)
+  });
+
+  alert("Perfil atualizado com sucesso!");
+  window.location.reload();
+}
+
+carregarPerfil();
