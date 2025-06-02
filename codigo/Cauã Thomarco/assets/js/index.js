@@ -41,3 +41,11 @@
     alert(msg);
     sessionStorage.removeItem('mensagemLogin');
   }
+document.addEventListener('DOMContentLoaded', function() {
+    const isAdmin = localStorage.getItem('admin') === 'true';
+    const adminLink = document.getElementById('admin-link');
+
+    if (isAdmin && adminLink) {
+      adminLink.style.display = 'inline-block';
+    }
+  });

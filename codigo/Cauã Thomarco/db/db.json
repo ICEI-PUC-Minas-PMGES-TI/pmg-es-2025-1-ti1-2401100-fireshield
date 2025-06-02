@@ -11,6 +11,18 @@
       "identidade": "C:\\fakepath\\Captura de tela 2025-05-30 115235.png",
       "rua": "Rua Padre Sinfronio Torres de Freitas - 199",
       "senha": "1011"
+    },
+    {
+      "id": 1,
+      "nome": "Admin",
+      "email": "admin@site.com",
+      "cpf": "12345678910",
+      "cidade": "Belo Horizonte",
+      "estado": "MG",
+      "pais": "Brasil",
+      "senha": "admin123",
+      "admin": true,
+      "fotoPerfil": "assets/img/perfil-icon.png"
     }
   ],
   "denuncias": []
