@@ -3,13 +3,12 @@ const fs = require('fs');
 const app = express();
 const PORT = 3000;
 
-// Função para ler o arquivo noticias.txt e transformar em array de notícias
 function lerNoticias() {
   const conteudo = fs.readFileSync('noticias.txt', 'utf-8');
-  const blocos = conteudo.split('------------------------').map(bloco => bloco.trim()).filter(b => b);
+  const blocos = conteudo.split('------------------------').map(b => b.trim()).filter(b => b);
 
-  const noticias = blocos.map(bloco => {
-    const linhas = bloco.split('\n').filter(l => l.trim() !== '');
+  return blocos.map(b => {
+    const linhas = b.split('\n').filter(l => l.trim() !== '');
     const noticia = {};
     linhas.forEach(linha => {
       if (linha.startsWith('Título:')) noticia.titulo = linha.replace('Título:', '').trim();
@@ -19,41 +18,21 @@ function lerNoticias() {
     });
     return noticia;
   });
-
-  return noticias;
 }
 
-// Rota principal que mostra as notícias
 app.get('/', (req, res) => {
   const noticias = lerNoticias();
+  const conteudo = noticias.map(n => `
+    <div class="noticia">
+      <div class="titulo"><a href="${n.link}" target="_blank">${n.titulo}</a></div>
+      <div class="data">${n.data}</div>
+      <div class="resumo">${n.resumo}</div>
+    </div>
+  `).join('');
 
-  let html = `
-    <html>
-    <head>
-      <title>Notícias</title>
-      <style>
-        body { font-family: Arial, sans-serif; max-width: 800px; margin: 20px auto; }
-        .noticia { border-bottom: 1px solid #ccc; padding: 10px 0; }
-        .titulo { font-size: 1.2em; font-weight: bold; }
-        .data { color: gray; font-size: 0.9em; }
-        .resumo { margin-top: 5px; }
-        a { text-decoration: none; color: #0066cc; }
-      </style>
-    </head>
-    <body>
-      <h1>Notícias</h1>
-      ${noticias.map(n => `
-        <div class="noticia">
-          <div class="titulo"><a href="${n.link}" target="_blank">${n.titulo}</a></div>
-          <div class="data">${n.data}</div>
-          <div class="resumo">${n.resumo}</div>
-        </div>
-      `).join('')}
-    </body>
-    </html>
-  `;
-
-  res.send(html);
+  const template = fs.readFileSync('noticia.html', 'utf-8'); // abre a pág noticia
+  const pagina = template.replace('{{conteudo}}', conteudo);
+  res.send(pagina);
 });
 
 app.listen(PORT, () => {
