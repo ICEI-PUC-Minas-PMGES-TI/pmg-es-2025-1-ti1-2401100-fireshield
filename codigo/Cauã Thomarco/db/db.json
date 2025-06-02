@@ -13,7 +13,7 @@
       "senha": "1011"
     },
     {
-      "id": 1,
+      "id": "1",
       "nome": "Admin",
       "email": "admin@site.com",
       "cpf": "12345678910",
@@ -23,6 +23,19 @@
       "senha": "admin123",
       "admin": true,
       "fotoPerfil": "assets/img/perfil-icon.png"
+    },
+    {
+      "id": "f818",
+      "nome": "Marco Antônio Teixeira Júnior",
+      "email": "marcobolinha@hotmail.com",
+      "cpf": "88513114634",
+      "cidade": "Pedro Leopoldo",
+      "estado": "MG",
+      "pais": "Brasil",
+      "identidade": "C:\\fakepath\\Captura de tela 2025-05-30 115235.png",
+      "rua": "Rua Padre Sinfronio Torres de Freitas - 199",
+      "senha": "139513",
+      "fotoPerfil": "http://127.0.0.1:5501/codigo/Cau%C3%A3%20Thomarco/assets/img/perfil-icon.png"
     }
   ],
   "denuncias": []
