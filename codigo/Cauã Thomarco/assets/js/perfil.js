@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
       document.getElementById('cpf').value = usuario.cpf;
       document.getElementById('cidade').value = usuario.cidade;
       document.getElementById('estado').value = usuario.estado;
+      document.getElementById('rua').value = usuario.rua;
       document.getElementById('pais').value = usuario.pais;
       document.getElementById('foto-preview').src = usuario.fotoPerfil || 'assets/img/perfil-icon.png';
 

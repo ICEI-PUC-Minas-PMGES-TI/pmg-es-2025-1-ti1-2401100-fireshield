@@ -20,6 +20,7 @@ document.getElementById('login-form').addEventListener('submit', async function 
       localStorage.setItem('usuarioCidade', usuario.cidade);
       localStorage.setItem('usuarioEstado', usuario.estado);
       localStorage.setItem('usuarioPais', usuario.pais);
+      localStorage.setItem('usuarioRua', usuario.rua);
       localStorage.setItem('usuarioFoto', usuario.fotoPerfil || '');
 
       // Se for admin (ex: CPF específico), seta a flag de admin
