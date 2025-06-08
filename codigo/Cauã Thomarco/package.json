@@ -1,5 +1,5 @@
 {
-  "name": "FireShield - jsonserver",
+  "name": "fireshield-jsonserver",
   "version": "1.0.0",
   "description": "Denuncia de queimadas de aplicação Web com backend baseado no JSON Server",
   "main": "index.js",
