@@ -123,7 +123,7 @@ async function excluirDenuncia(id) {
   }
 }
 
-document.getElementById('deletar-conta').addEventListener('click', async () => {
+document.getElementById('excluir-btn').addEventListener('click', async () => {
   if (confirm('Tem certeza que deseja excluir sua conta? Esta ação é irreversível.')) {
     await fetch(`http://localhost:3000/usuarios/${usuarioId}`, { method: 'DELETE' });
     localStorage.clear();
