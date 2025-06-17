@@ -174,6 +174,7 @@ Relação de ferramentas empregadas pelo grupo durante o projeto.
 
 | Ambiente                    | Plataforma | Link de acesso                                     |
 | --------------------------- | ---------- | -------------------------------------------------- |
+| Ambiente de Reuniões | WhatsApp       | Link não disponivel, reuniões realizadas em chamada  |
 | Processo de Design Thinking | Miro       | https://miro.com/app/board/uXjVIaSTdRc=/?share_link_id=26320249912Links  |
 | Repositório de código     | GitHub     | https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2025-1-ti1-2401100-fireshield.git     |
 | Hospedagem do site          | Render     | XXXXXXXX |
