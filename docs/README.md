@@ -315,9 +315,13 @@ Registro dos usuários do sistema utilizados para login e para o perfil do siste
 
 Esta seção apresenta os módulos e APIs utilizados na solução
 
+**Mapa**
+
+* Leaflet - [https://leafletjs.com/](https://leafletjs.com/)
+
 **Images**:
 
-* Unsplash - [https://unsplash.com/](https://unsplash.com/) ⚠️ EXEMPLO ⚠️
+* Unsplash - [https://leafletjs.com/](https://leafletjs.com/)
 
 **Fonts:**
 
