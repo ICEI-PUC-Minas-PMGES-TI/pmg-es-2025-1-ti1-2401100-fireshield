@@ -336,13 +336,8 @@ Esta seção apresenta os módulos e APIs utilizados na solução
 
 As referências utilizadas no trabalho foram:
 
-* SOBRENOME, Nome do autor. Título da obra. 8. ed. Cidade: Editora, 2000. 287 p ⚠️ EXEMPLO ⚠️
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
->
-> **Orientações**:
->
-> - [Formato ABNT](https://www.normastecnicas.com/abnt/trabalhos-academicos/referencias/)
-> - [Referências Bibliográficas da ABNT](https://comunidade.rockcontent.com/referencia-bibliografica-abnt/)
+* CORPO DE BOMBEIROS MILITAR DO ESTADO DE SÃO PAULO. Cuidados em caso de incêndio residencial. São Paulo: CBMESP, 2023. Disponível em: https://www.corpodebombeiros.sp.gov.br/noticias/cuidados-incendio. Acesso em: 21 jun. 2025.
+* MINAS GERAIS. Corpo de Bombeiros Militar. Código de Segurança Contra Incêndio e Pânico – COSCIP. Decreto nº 44.746, de 29 de fevereiro de 2008. Diário do Executivo, Belo Horizonte, MG, 1 mar. 2008. Disponível em: https://www.bombeiros.mg.gov.br/legislacao. Acesso em: 21 jun. 2025.
+* TRIBUNAL DE CONTAS DO ESTADO DE MINAS GERAIS. Manual de fiscalização de obras públicas. Belo Horizonte: TCE-MG, 2023. Disponível em: https://www.tce.mg.gov.br/. Acesso em: 21 jun. 2025
+* BRASIL. Corpo de Bombeiros Militar. Atuação, estrutura e serviços prestados. Brasília, DF: Ministério da Justiça e Segurança Pública, 2024.
+* CORPO DE BOMBEIROS MILITAR DE MINAS GERAIS. Site oficial do Corpo de Bombeiros Militar de Minas Gerais. Belo Horizonte: CBMMG, [2025]. Disponível em: https://www.bombeiros.mg.gov.br/. Acesso em: 21 jun. 2025.
