@@ -1,96 +1,42 @@
 {
   "usuarios": [
     {
-      "id": 1,
-      "nome": "Ana Costa",
-      "email": "ana.costa@example.com",
-      "senha": "senha123",
-      "cpf": "123.456.789-00",
-      "telefone": "11999999999"
+      "id": "2",
+      "nome": "Cauã Thomarco",
+      "email": "cauathomarco@gmail.com",
+      "cpf": "14406119639",
+      "cidade": "Pedro Leopoldo",
+      "estado": "MG",
+      "pais": "Brasil",
+      "identidade": "C:\\fakepath\\Captura de tela 2025-05-30 115235.png",
+      "rua": "Rua Padre Sinfronio Torres de Freitas - 199",
+      "senha": "1011"
     },
     {
-      "id": 2,
-      "nome": "Pedro Souza",
-      "email": "pedro.souza@example.com",
-      "senha": "senha456",
-      "cpf": "987.654.321-00",
-      "telefone": "21988888888"
-    }
-  ],
-  "denuncias": [
-    {
-      "id": 1,
-      "titulo": "Queimada próxima à floresta",
-      "descricao": "Grande quantidade de fumaça vista nas proximidades da floresta.",
-      "data": "2025-04-27",
-      "hora": "14:30",
-      "localId": 1,
-      "usuarioId": 1,
-      "imagemUrl": "https://exemplo.com/imagens/queimada1.jpg",
-      "status": "Pendente",
-      "orgaoResponsavelId": 1
-    },
-    {
-      "id": 2,
-      "titulo": "Fogo em terreno baldio",
-      "descricao": "Pequeno foco de incêndio em terreno abandonado no bairro Centro.",
-      "data": "2025-04-26",
-      "hora": "10:15",
-      "localId": 2,
-      "usuarioId": 2,
-      "imagemUrl": "https://exemplo.com/imagens/queimada2.jpg",
-      "status": "Resolvido",
-      "orgaoResponsavelId": 2
-    }
-  ],
-  "locais": [
-    {
-      "id": 1,
-      "nome": "Floresta Municipal",
+      "id": "1",
+      "nome": "Admin",
+      "email": "admin@site.com",
+      "cpf": "12345678910",
       "cidade": "Belo Horizonte",
       "estado": "MG",
-      "latitude": -19.9191,
-      "longitude": -43.9386
+      "pais": "Brasil",
+      "senha": "admin123",
+      "admin": true,
+      "fotoPerfil": "assets/img/perfil-icon.png"
     },
     {
-      "id": 2,
-      "nome": "Terreno Baldio - Bairro Centro",
-      "cidade": "Contagem",
+      "id": "f818",
+      "nome": "Marco Antônio Teixeira Júnior",
+      "email": "marcobolinha@hotmail.com",
+      "cpf": "88513114634",
+      "cidade": "Pedro Leopoldo",
       "estado": "MG",
-      "latitude": -19.9167,
-      "longitude": -44.0833
+      "pais": "Brasil",
+      "identidade": "C:\\fakepath\\Captura de tela 2025-05-30 115235.png",
+      "rua": "Rua Padre Sinfronio Torres de Freitas - 199",
+      "senha": "139513",
+      "fotoPerfil": "http://127.0.0.1:5501/codigo/Cau%C3%A3%20Thomarco/assets/img/perfil-icon.png"
     }
   ],
-  "orgaosResponsaveis": [
-    {
-      "id": 1,
-      "nome": "Corpo de Bombeiros",
-      "telefone": "193",
-      "email": "bombeiros@example.com"
-    },
-    {
-      "id": 2,
-      "nome": "Defesa Civil",
-      "telefone": "199",
-      "email": "defesa.civil@example.com"
-    }
-  ],
-  "comentarios": [
-    {
-      "id": 1,
-      "denunciaId": 1,
-      "usuarioId": 2,
-      "texto": "Acabei de passar pelo local, o fogo aumentou muito!",
-      "data": "2025-04-27",
-      "hora": "15:00"
-    },
-    {
-      "id": 2,
-      "denunciaId": 2,
-      "usuarioId": 1,
-      "texto": "Fogo controlado, área segura agora.",
-      "data": "2025-04-26",
-      "hora": "11:00"
-    }
-  ]
+  "denuncias": []
 }
