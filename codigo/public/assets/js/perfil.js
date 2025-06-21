@@ -132,10 +132,6 @@ document.getElementById('excluir-btn').addEventListener('click', async () => {
   }
 });
 
-document.getElementById('editar-btn').addEventListener('click', () => {
-  window.location.href = 'editar_perfil.html'; // Página de edição (opcional)
-});
-
 // Carregamento inicial
 carregarPerfil();
 carregarDenuncias();
