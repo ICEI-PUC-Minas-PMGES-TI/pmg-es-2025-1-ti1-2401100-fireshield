@@ -231,24 +231,32 @@ Permite a inclusão, leitura, alteração e exclusão de contatos para o sistema
 
 Descrição das estruturas de dados utilizadas na solução com exemplos no formato JSON.Info
 
-##### Estrutura de Dados - Contatos   ⚠️ EXEMPLO ⚠️
+##### Estrutura de Dados - Denuncias
 
-Contatos da aplicação
+Estrutura utilizada para estar salvando as denuncias realizadas pelos usuarios
 
 ```json
   {
-    "id": 1,
-    "nome": "Leanne Graham",
-    "cidade": "Belo Horizonte",
-    "categoria": "amigos",
-    "email": "Sincere@april.biz",
-    "telefone": "1-770-736-8031",
-    "website": "hildegard.org"
+     "denuncias": [
+    {
+      "local": "teste",
+      "data": "2025-06-19",
+      "hora": "11:11",
+      "tipoArea": "urbana",
+      "descricao": "11",
+      "arquivo": "1",
+      "nome": "",
+      "telefone": "",
+      "email": "",
+      "userId": 2,
+      "id": 1750543876416
+    }
+  ]
   }
   
 ```
 
-##### Estrutura de Dados - Usuários  ⚠️ EXEMPLO ⚠️
+##### Estrutura de Dados - Usuários 
 
 Registro dos usuários do sistema utilizados para login e para o perfil do sistema
 
@@ -291,21 +299,6 @@ Registro dos usuários do sistema utilizados para login e para o perfil do siste
       "rua": "Rua Padre Sinfronio Torres de Freitas - 199",
       "senha": "139513",
       "fotoPerfil": "http://127.0.0.1:5501/codigo/Cau%C3%A3%20Thomarco/assets/img/perfil-icon.png"
-    }
-  ],
-  "denuncias": [
-    {
-      "local": "teste",
-      "data": "2025-06-19",
-      "hora": "11:11",
-      "tipoArea": "urbana",
-      "descricao": "11",
-      "arquivo": "1",
-      "nome": "",
-      "telefone": "",
-      "email": "",
-      "userId": 2,
-      "id": 1750543876416
     }
   ]
 }
