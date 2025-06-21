@@ -38,5 +38,19 @@
       "fotoPerfil": "http://127.0.0.1:5501/codigo/Cau%C3%A3%20Thomarco/assets/img/perfil-icon.png"
     }
   ],
-  "denuncias": []
+  "denuncias": [
+    {
+      "local": "teste",
+      "data": "2025-06-19",
+      "hora": "11:11",
+      "tipoArea": "urbana",
+      "descricao": "11",
+      "arquivo": "1",
+      "nome": "",
+      "telefone": "",
+      "email": "",
+      "userId": 2,
+      "id": 1750543876416
+    }
+  ]
 }
