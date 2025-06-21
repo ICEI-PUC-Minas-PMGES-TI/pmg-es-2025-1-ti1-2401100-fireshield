@@ -9,10 +9,7 @@ As queimadas causam danos ambientais e à saúde, agravados pela detecção tard
 * **Membros da equipe:**
 
   * [Cauã Thomarco](https://github.com/CauaThomarco)
-  * [Arthur Lopes](https://github.com/lopes565)
-  * [Rafael Lopes](https://github.com/rafaellldcz)
   * [Guilherme Mello](https://github.com/GuilhermeAMello)
-  * [Bernado Molinari](https://github.com/BernardoMolinari)
   * [Lucas Domingos](https://github.com/LucasDomingos1)
   * [Lian Vasconcelos](https://github.com/Lianvq)
 
