@@ -199,4 +199,30 @@
   border-radius: 5px;
   text-decoration: none;
 }
-
+ .carousel-feed {
+      max-height: 400px;
+      overflow-y: auto;
+      padding-right: 10px;
+    }
+    .post {
+      background-color: #fff8e1;
+      border: 2px solid #ffcc00;
+      border-radius: 12px;
+      padding: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .post h3 {
+      margin: 0 0 5px 0;
+      color: #b30000;
+    }
+    .post small {
+      display: block;
+      margin-bottom: 10px;
+      color: #555;
+    }
+    .post img {
+      max-width: 100%;
+      border-radius: 4px;
+      margin-top: 10px;
+    }

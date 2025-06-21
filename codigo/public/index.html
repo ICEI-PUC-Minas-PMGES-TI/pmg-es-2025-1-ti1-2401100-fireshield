@@ -5,35 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Denuncie Queimadas Ilegais</title>
   <link rel="stylesheet" href="assets/css/style.css">
-  <style>
-    .carousel-feed {
-      max-height: 400px;
-      overflow-y: auto;
-      padding-right: 10px;
-    }
-    .post {
-      background-color: #fff8e1;
-      border: 2px solid #ffcc00;
-      border-radius: 12px;
-      padding: 15px;
-      margin-bottom: 20px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    .post h3 {
-      margin: 0 0 5px 0;
-      color: #b30000;
-    }
-    .post small {
-      display: block;
-      margin-bottom: 10px;
-      color: #555;
-    }
-    .post img {
-      max-width: 100%;
-      border-radius: 4px;
-      margin-top: 10px;
-    }
-  </style>
 </head>
 <body>
 
@@ -48,6 +19,7 @@
       <li><a href="#">Contato</a></li>
       <li><a href="maps.html">Mapa</a></li>
       <li><a href="perfil.html">Meu Perfil</a></li>
+      <li><a href="feed.html">Feed</a></li>
       <li><a href="admin.html" id="admin-link" class="btn admin-btn" style="display: none;">Admin</a></li>
     </ul>
     <div id="perfil-container" class="perfil-container"></div>
@@ -63,7 +35,6 @@
 </section>
 
 <section class="ocorrencias">
-  <div class="container">
     <div id="feed" class="carousel-feed">
       <h2>Denúncias Recentes</h2>
     </div>
@@ -74,65 +45,6 @@
   © Todos os direitos reservados aos alunos.
 </footer>
 
-<script>
-  const feed = document.getElementById('feed');
-  const API_URL = 'http://localhost:3000/denuncias';
-
-  function formatarDataHora(dataStr, horaStr) {
-    if (!dataStr || !horaStr) return '';
-    const dt = new Date(dataStr + 'T' + horaStr);
-    return dt.toLocaleString('pt-BR', { dateStyle:'short', timeStyle:'short' });
-  }
-
-  function criarPost(denuncia) {
-    const post = document.createElement('article');
-    post.classList.add('post');
-
-    const dataHoraFormatada = formatarDataHora(denuncia.data, denuncia.hora);
-
-    post.innerHTML = `
-      <h3>${denuncia.local} (${denuncia.tipoArea || 'Área não informada'})</h3>
-      <small>Data/hora: ${dataHoraFormatada}</small>
-      <p>${denuncia.descricao}</p>
-      ${denuncia.arquivo ? `<img src="${denuncia.arquivo}" alt="Imagem denúncia">` : ''}
-      ${(denuncia.nome || denuncia.telefone || denuncia.email) ? `
-        <small>
-          <strong>Denunciante:</strong> ${denuncia.nome || '-'}<br>
-          <strong>Telefone:</strong> ${denuncia.telefone || '-'}<br>
-          <strong>E-mail:</strong> ${denuncia.email || '-'}
-        </small>
-      ` : ''}
-    `;
-    return post;
-  }
-
-  async function carregarDenuncias() {
-    try {
-      const res = await fetch(API_URL);
-      if (!res.ok) throw new Error('Erro ao buscar denúncias');
-      const denuncias = await res.json();
-
-      feed.querySelectorAll('.post').forEach(post => post.remove());
-
-      denuncias.sort((a, b) => {
-        const dtA = new Date(a.data + 'T' + a.hora);
-        const dtB = new Date(b.data + 'T' + b.hora);
-        return dtB - dtA;
-      });
-
-      denuncias.forEach(denuncia => {
-        const post = criarPost(denuncia);
-        feed.appendChild(post);
-      });
-    } catch (error) {
-      console.error('Erro ao carregar denúncias:', error);
-      feed.innerHTML += '<p>Erro ao carregar as denúncias. Tente novamente mais tarde.</p>';
-    }
-  }
-
-  carregarDenuncias();
-  setInterval(carregarDenuncias, 60000);
-</script>
 <script src="assets/js/index.js"></script>
 </body>
 </html>
