@@ -253,26 +253,63 @@ Contatos da aplicação
 Registro dos usuários do sistema utilizados para login e para o perfil do sistema
 
 ```json
-  {
-    id: "eed55b91-45be-4f2c-81bc-7686135503f9",
-    email: "admin@abc.com",
-    id: "eed55b91-45be-4f2c-81bc-7686135503f9",
-    login: "admin",
-    nome: "Administrador do Sistema",
-    senha: "123"
-  }
+ {
+  "usuarios": [
+    {
+      "id": "2",
+      "nome": "Cauã Thomarco",
+      "email": "cauathomarco@gmail.com",
+      "cpf": "14406119639",
+      "cidade": "Pedro Leopoldo",
+      "estado": "MG",
+      "pais": "Brasil",
+      "identidade": "C:\\fakepath\\Captura de tela 2025-05-30 115235.png",
+      "rua": "Rua Padre Sinfronio Torres de Freitas - 199",
+      "senha": "1011"
+    },
+    {
+      "id": "1",
+      "nome": "Admin",
+      "email": "admin@site.com",
+      "cpf": "12345678910",
+      "cidade": "Belo Horizonte",
+      "estado": "MG",
+      "pais": "Brasil",
+      "senha": "admin123",
+      "admin": true,
+      "fotoPerfil": "assets/img/perfil-icon.png"
+    },
+    {
+      "id": "f818",
+      "nome": "Marco Antônio Teixeira Júnior",
+      "email": "marcobolinha@hotmail.com",
+      "cpf": "88513114634",
+      "cidade": "Pedro Leopoldo",
+      "estado": "MG",
+      "pais": "Brasil",
+      "identidade": "C:\\fakepath\\Captura de tela 2025-05-30 115235.png",
+      "rua": "Rua Padre Sinfronio Torres de Freitas - 199",
+      "senha": "139513",
+      "fotoPerfil": "http://127.0.0.1:5501/codigo/Cau%C3%A3%20Thomarco/assets/img/perfil-icon.png"
+    }
+  ],
+  "denuncias": [
+    {
+      "local": "teste",
+      "data": "2025-06-19",
+      "hora": "11:11",
+      "tipoArea": "urbana",
+      "descricao": "11",
+      "arquivo": "1",
+      "nome": "",
+      "telefone": "",
+      "email": "",
+      "userId": 2,
+      "id": 1750543876416
+    }
+  ]
+}
 ```
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Apresente as estruturas de dados utilizadas na solução tanto para dados utilizados na essência da aplicação quanto outras estruturas que foram criadas para algum tipo de configuração
->
-> Nomeie a estrutura, coloque uma descrição sucinta e apresente um exemplo em formato JSON.
->
-> **Orientações:**
->
-> * [JSON Introduction](https://www.w3schools.com/js/js_json_intro.asp)
-> * [Trabalhando com JSON - Aprendendo desenvolvimento web | MDN](https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/Objects/JSON)
 
 ## Módulos e APIs
 
