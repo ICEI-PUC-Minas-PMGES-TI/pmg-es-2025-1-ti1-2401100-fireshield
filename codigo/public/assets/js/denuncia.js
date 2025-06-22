@@ -1,13 +1,29 @@
 const form = document.getElementById('denunciaForm');
   const API_URL = 'http://localhost:3000/denuncias';
 
+  async function geocodeEndereco(endereco) {
+    const url = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(endereco)}`;
+    const res = await fetch(url);
+    const data = await res.json();
+    if (data.length > 0) {
+      return {
+        lat: parseFloat(data[0].lat),
+        lng: parseFloat(data[0].lon)
+      };
+    }
+    return { lat: null, lng: null };
+  }
+
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
-    const userId = localStorage.getItem('userId'); // se estiver logado, vincula a denúncia
+    const userId = localStorage.getItem('userId');
+    const endereco = form.local.value.trim();
+
+    const { lat, lng } = await geocodeEndereco(endereco);
 
     const novaDenuncia = {
-      local: form.local.value.trim(),
+      local: endereco,
       data: form.data.value,
       hora: form.hora.value,
       tipoArea: form['tipo-area'].value,
@@ -17,6 +33,8 @@ const form = document.getElementById('denunciaForm');
       telefone: form.telefone.value.trim(),
       email: form.email.value.trim(),
       userId: userId ? Number(userId) : null,
+      lat,
+      lng,
       id: Date.now()
     };
 
