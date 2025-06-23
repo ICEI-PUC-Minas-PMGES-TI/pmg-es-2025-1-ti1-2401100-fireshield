@@ -234,7 +234,7 @@ Exibe todas as denúncias com base em suas coordenadas geográficas em um mapa i
 
 ##### Funcionalidade 3 - Feed de Denuncias
 
-EVisualização das denúncias em formato de carrossel, exibindo dados como local, data, tipo de área, descrição e foto. 
+Visualização das denúncias em formato de carrossel, exibindo dados como local, data, tipo de área, descrição e foto. 
 
 * **Estrutura de dados:** [Denuncias](#ti_ed_denuncias)
 * **Instruções de acesso:**
@@ -243,6 +243,19 @@ EVisualização das denúncias em formato de carrossel, exibindo dados como loca
 * **Tela da funcionalidade:**
 
 ![Tela de Funcionalidade](images/feed.png)
+
+##### Funcionalidade 4 - Cadastro e Login de Usuarios
+
+Usuários podem se registrar e realizar login para acompanhar e gerenciar suas denúncias.  
+
+* **Estrutura de dados:** [Usuarios](#ti_ed_usuarios)
+* **Instruções de acesso:**
+  * Acesse as páginas register.html e login.html 
+  * Após login, você será redirecionado ao perfil 
+* **Tela da funcionalidade:**
+
+![Tela de Funcionalidade](images/login.png)
+![Tela de Funcionalidade](images/registrar-se.png)
 
 ## Estruturas de Dados
 
