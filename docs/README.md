@@ -205,18 +205,19 @@ O vídeo a seguir traz uma apresentação do problema que a equipe está tratand
 
 Esta seção apresenta as funcionalidades da solução.Info
 
-##### Funcionalidade 1 - Cadastro de Contatos ⚠️ EXEMPLO ⚠️
+##### Funcionalidade 1 - Envio de Denuncias
 
-Permite a inclusão, leitura, alteração e exclusão de contatos para o sistema
+Permite o envio de denúncias sobre queimadas de forma anônima ou identificada, com inclusão de dados como local, data, hora, tipo da área, descrição e imagem/vídeo. 
 
-* **Estrutura de dados:** [Contatos](#ti_ed_contatos)
+* **Estrutura de dados:** [Denuncias](#ti_ed_denuncias)
 * **Instruções de acesso:**
-  * Abra o site e efetue o login
-  * Acesse o menu principal e escolha a opção Cadastros
-  * Em seguida, escolha a opção Contatos
+  * Acesse a página Nova Denúncia 
+  * Preencha o formulário com os dados obrigatórios 
+  * Ao digitar o CEP, o campo de rua será preenchido automaticamente 
+  * A latitude e longitude são calculadas com base no endereço informado 
 * **Tela da funcionalidade**:
 
-![Tela de Funcionalidade](images/exemplo-funcionalidade.png)
+![Tela de Funcionalidade](images/denuncia.png)
 
 > ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
 >
