@@ -4,14 +4,10 @@ a produção de um software de denúncia facilitará o reporte rápido de focos 
 
 ## Alunos integrantes da equipe
 
-* Antonio Loureiro Leandro Neto
-* Arthur Lopes de Paiva 
-* Bernado Molinari Lopes
 * Cauã Thomarco Thomaz Teixeira 
 * Guilherme Azevedo Mello
 * Lian Vasconcelos Queiroz 
 * Lucas Domingos Batista Silva 
-* Rafael Lopes da Costa
 
 ## Professores responsáveis
 
