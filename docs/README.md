@@ -31,42 +31,42 @@ Detalhes sobre o espaço de problema, os objetivos do projeto, sua justificativa
 
 ## Problema
 
-**✳️✳️✳️As queimadas representam uma grave ameaça ao meio ambiente e à saúde pública. Elas resultam na destruição da biodiversidade, degradação do solo, poluição atmosférica e agravam problemas respiratórios na população. Além disso, as queimadas contribuem para o aquecimento global ao liberar grandes quantidades de CO₂ na atmosfera. No entanto, a detecção tardia e a falta de denúncias dificultam a resposta rápida e eficaz, permitindo que o fogo se alastre e cause ainda mais danos.**
+**As queimadas representam uma grave ameaça ao meio ambiente e à saúde pública. Elas resultam na destruição da biodiversidade, degradação do solo, poluição atmosférica e agravam problemas respiratórios na população. Além disso, as queimadas contribuem para o aquecimento global ao liberar grandes quantidades de CO₂ na atmosfera. No entanto, a detecção tardia e a falta de denúncias dificultam a resposta rápida e eficaz, permitindo que o fogo se alastre e cause ainda mais danos.**
 
 **A rápida detecção de queimadas pode ser um fator crucial para minimizar seus impactos ambientais e de saúde. No entanto, há desafios significativos que dificultam esse processo, como a ausência de um sistema eficiente de denúncia e a falta de conscientização da população. Além disso, a demora na resposta às queimadas pode agravar a destruição da biodiversidade e afetar diretamente as comunidades locais, tornando a prevenção e o combate mais complexos.**
 
-**Outro aspecto relevante é o impacto da tecnologia na participação ativa da sociedade no combate às queimadas. Uma solução eficiente poderia incentivar o envolvimento da população e fortalecer a conexão entre cidadãos e autoridades responsáveis. Dessa forma, entender os fatores que influenciam a eficiência na denúncia e a resposta ao fogo é essencial para mitigar os danos causados por esses eventos.✳️✳️✳️**
+**Outro aspecto relevante é o impacto da tecnologia na participação ativa da sociedade no combate às queimadas. Uma solução eficiente poderia incentivar o envolvimento da população e fortalecer a conexão entre cidadãos e autoridades responsáveis. Dessa forma, entender os fatores que influenciam a eficiência na denúncia e a resposta ao fogo é essencial para mitigar os danos causados por esses eventos.**
 
 ## Objetivos
 
-**✳️✳️✳️O objetivo principal do nosso software é aumentar a eficiência dos bombeiros na região de Minas Gerais, trazendo mais rapidez no processo, clareza nas informações e um procedimento mais fluído.**
-**Para atingirmos esse objetivo principal, devemos pensar em alguns objetivos mais específicos, sendo eles: Entender as dores dos clientes, entender o processo realizado pelo CBMMG (Corpo de Bombeiros Militar de Minas Gerais), buscar uma forma de passar a informação de forma clara e dinâmica para acelerar a rapidez para resolução do chamado, informar e atualizar os clientes sobre status de denúncias de forma quase imediata, utilizar o serviço do Google Maps para obter informações para trazer dinamicidade para resolução de denúncias. (Dentro das Leis Gerais de Proteção de Dados (LGPD)).✳️✳️✳️**
+**O objetivo principal do nosso software é aumentar a eficiência dos bombeiros na região de Minas Gerais, trazendo mais rapidez no processo, clareza nas informações e um procedimento mais fluído.**
+**Para atingirmos esse objetivo principal, devemos pensar em alguns objetivos mais específicos, sendo eles: Entender as dores dos clientes, entender o processo realizado pelo CBMMG (Corpo de Bombeiros Militar de Minas Gerais), buscar uma forma de passar a informação de forma clara e dinâmica para acelerar a rapidez para resolução do chamado, informar e atualizar os clientes sobre status de denúncias de forma quase imediata, utilizar o serviço do Google Maps para obter informações para trazer dinamicidade para resolução de denúncias. (Dentro das Leis Gerais de Proteção de Dados (LGPD)).**
 
 ## Justificativa
 
-**✳️✳️✳️ Compreender que a detecção tardia das queimadas e a falta de denúncias dificultam a resposta eficaz e agravam os impactos ambientais e sociais, apresentando uma solução baseada em um software de denúncia que facilita o reporte rápido de focos de incêndio, conectando cidadãos às autoridades de maneira ágil e precisa. Essa iniciativa é voltada para a população e órgãos responsáveis pelo combate ao fogo, fundamentando-se no uso da tecnologia como ferramenta essencial para a conscientização e redução dos danos causados pelas queimadas.✳️✳️✳️**
+**Compreender que a detecção tardia das queimadas e a falta de denúncias dificultam a resposta eficaz e agravam os impactos ambientais e sociais, apresentando uma solução baseada em um software de denúncia que facilita o reporte rápido de focos de incêndio, conectando cidadãos às autoridades de maneira ágil e precisa. Essa iniciativa é voltada para a população e órgãos responsáveis pelo combate ao fogo, fundamentando-se no uso da tecnologia como ferramenta essencial para a conscientização e redução dos danos causados pelas queimadas.**
 
 ## Público-Alvo
 
-**✳️✳️✳️O público-alvo que irá utilizar o Software serão pessoas adultas, preocupadas com a segurança e velocidade do processo dos bombeiros, preocupadas com o meio ambiente e e que querem acompanhar as denúncias em andamento e resolvidas pelo CBMMG.✳️✳️✳️**
+**O público-alvo que irá utilizar o Software serão pessoas adultas, preocupadas com a segurança e velocidade do processo dos bombeiros, preocupadas com o meio ambiente e e que querem acompanhar as denúncias em andamento e resolvidas pelo CBMMG.**
 
 # Product Discovery
 
 ## Etapa de Entendimento
 
-**✳️✳️✳️ ![Mapa de Alinhamento e Stakeholders](<docs/images/G5 -  Denúncia de Queimadas - Entendimento - Empatia 1.jpg>)**
+**![Mapa de Alinhamento e Stakeholders](<docs/images/G5 -  Denúncia de Queimadas - Entendimento - Empatia 1.jpg>)**
 **![Entrevistas Qualitativas e Highlights da pesquisa](<images/G5 -  Denúncia de Queimadas - &lt;-- Entrevistas - Empatia 4.jpg>)**
 **![Entrevistas Qualitativas e Highlights da pesquisa](<images/G5 -  Denúncia de Queimadas - &lt;-- Entrevistas - Empatia (V) 3.jpg>)**
-**![Entrevistas Qualitativas e Highlights da pesquisa](<images/G5 -  Denúncia de Queimadas - &lt;-- Entrevistas - Empatia (V) 2.jpg>)✳️✳️✳️**
+**![Entrevistas Qualitativas e Highlights da pesquisa](<images/G5 -  Denúncia de Queimadas - &lt;-- Entrevistas - Empatia (V) 2.jpg>)**
 
 ## Etapa de Definição
 
 ### Personas
 
-**✳️✳️✳️![Persona](<images/G5 -  Denúncia de Queimadas - Entendimento - Definição 3.jpg>)**
+**![Persona](<images/G5 -  Denúncia de Queimadas - Entendimento - Definição 3.jpg>)**
 **![Persona](<images/G5 -  Denúncia de Queimadas - Entendimento - Definição 5.jpg>)**
 **![Persona](<images/G5 -  Denúncia de Queimadas - Entendimento - Definição 6.jpg>)**
-**![Persona](<images/G5 -  Denúncia de Queimadas - Entendimento Definição 4.jpg>)✳️✳️✳️**
+**![Persona](<images/G5 -  Denúncia de Queimadas - Entendimento Definição 4.jpg>)**
 
 # Product Design
 
@@ -85,11 +85,11 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 
 ## Proposta de Valor
 
-**✳️✳️✳️Na parte Inferior da Imagem**
+**Na parte Inferior da Imagem**
 **![Persona](<images/G5 -  Denúncia de Queimadas - Entendimento - Definição 3.jpg>)**
 **![Persona](<images/G5 -  Denúncia de Queimadas - Entendimento - Definição 5.jpg>)**
 **![Persona](<images/G5 -  Denúncia de Queimadas - Entendimento - Definição 6.jpg>)**
-**![Persona](<images/G5 -  Denúncia de Queimadas - Entendimento Definição 4.jpg>)✳️✳️✳️**
+**![Persona](<images/G5 -  Denúncia de Queimadas - Entendimento Definição 4.jpg>)**
 
 ## Requisitos
 
@@ -129,7 +129,7 @@ Artefatos relacionados com a interface e a interacão do usuário na proposta de
 
 Estes são os protótipos de telas do sistema.
 
-**✳️✳️✳️Descrição do Protótipo**
+**Descrição do Protótipo**
   **A interface apresenta os seguintes elementos:**
     **Cabeçalho com fundo escuro translúcido, contendo:**
       **Um menu horizontal com as opções: Home, Serviço, Sobre nós, Suporte, Como denunciar e Contato.**
@@ -155,11 +155,11 @@ Descrição para a tela XPTO
 
 ### User Flow
 
-**✳️✳️✳️ ![Fluxo de Telas](image-2.png) ✳️✳️✳️**
+** ![Fluxo de Telas](image-2.png) **
 
 ### Protótipo Interativo
 
-**✳️✳️✳️ [Protótipo Interativo (Figma)]()https://www.figma.com/design/ye4YEljIlmBsrYQNqR1l2V/Untitled?node-id=1-2771&t=hairN469wtgXVMPW-1✳️✳️✳️**
+** [Protótipo Interativo (Figma)]()https://www.figma.com/design/ye4YEljIlmBsrYQNqR1l2V/Untitled?node-id=1-2771&t=hairN469wtgXVMPW-1**
 
 # Metodologia
 
@@ -291,9 +291,9 @@ Estrutura utilizada para estar salvando as denuncias realizadas pelos usuarios
 Registro dos usuários do sistema utilizados para login e para o perfil do sistema
 
 ```json
- {
-  "usuarios": [
-    {
+{
+  [
+   {
       "id": "2",
       "nome": "Cauã Thomarco",
       "email": "cauathomarco@gmail.com",
@@ -317,19 +317,6 @@ Registro dos usuários do sistema utilizados para login e para o perfil do siste
       "admin": true,
       "fotoPerfil": "assets/img/perfil-icon.png"
     },
-    {
-      "id": "f818",
-      "nome": "Marco Antônio Teixeira Júnior",
-      "email": "marcobolinha@hotmail.com",
-      "cpf": "88513114634",
-      "cidade": "Pedro Leopoldo",
-      "estado": "MG",
-      "pais": "Brasil",
-      "identidade": "C:\\fakepath\\Captura de tela 2025-05-30 115235.png",
-      "rua": "Rua Padre Sinfronio Torres de Freitas - 199",
-      "senha": "139513",
-      "fotoPerfil": "http://127.0.0.1:5501/codigo/Cau%C3%A3%20Thomarco/assets/img/perfil-icon.png"
-    }
   ]
 }
 ```
