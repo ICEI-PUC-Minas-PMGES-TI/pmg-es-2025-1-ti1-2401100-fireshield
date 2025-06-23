@@ -145,13 +145,13 @@ Estes são os protótipos de telas do sistema.
     **À esquerda, um mapa com marcadores indicando locais de ocorrência de queimadas.**
     **À direita, um bloco de texto com título "Últimas Ocorrências" e descrição de uma ocorrência:**
       **Destaque para o endereço: Rua Joaquim Teixeira de Morais, bairro Miramar.**
-      **Descrição textual do incidente, mencionando danos estruturais e a ausência de laudo do Corpo de Bombeiros (AVCB).✳️✳️✳️**
+      **Descrição textual do incidente, mencionando danos estruturais e a ausência de laudo do Corpo de Bombeiros (AVCB).**
 
-##### TELA XPTO ⚠️ EXEMPLO ⚠️
+##### TELA XPTO 
 
 Descrição para a tela XPTO
 
-![TELA XPTO](image.png))
+![TELA XPTO](image.png)
 
 ### User Flow
 
