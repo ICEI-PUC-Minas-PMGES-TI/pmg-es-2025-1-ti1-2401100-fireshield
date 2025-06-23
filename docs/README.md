@@ -151,11 +151,11 @@ Estes são os protótipos de telas do sistema.
 
 Descrição para a tela XPTO
 
-![TELA XPTO](image.png)
+![TELA XPTO](images/image.png)
 
 ### User Flow
 
-** ![Fluxo de Telas](image-2.png) **
+** ![Fluxo de Telas](images/image-2.png) **
 
 ### Protótipo Interativo
 
@@ -183,7 +183,7 @@ Relação de ferramentas empregadas pelo grupo durante o projeto.
 
 Divisão de papéis no grupo e apresentação da estrutura da ferramenta de controle de tarefas (Kanban).
 
-![Kanban Grupo](image-3.png)
+![Kanban Grupo](images/image-3.png)
 
 # Solução Implementada
 
