@@ -54,7 +54,7 @@ Detalhes sobre o espaço de problema, os objetivos do projeto, sua justificativa
 
 ## Etapa de Entendimento
 
-**![Mapa de Alinhamento e Stakeholders](<docs/images/G5 -  Denúncia de Queimadas - Entendimento - Empatia 1.jpg>)**
+**![Mapa de Alinhamento e Stakeholders](<images/G5 -  Denúncia de Queimadas - Entendimento - Empatia 1.jpg>)**
 **![Entrevistas Qualitativas e Highlights da pesquisa](<images/G5 -  Denúncia de Queimadas - &lt;-- Entrevistas - Empatia 4.jpg>)**
 **![Entrevistas Qualitativas e Highlights da pesquisa](<images/G5 -  Denúncia de Queimadas - &lt;-- Entrevistas - Empatia (V) 3.jpg>)**
 **![Entrevistas Qualitativas e Highlights da pesquisa](<images/G5 -  Denúncia de Queimadas - &lt;-- Entrevistas - Empatia (V) 2.jpg>)**
