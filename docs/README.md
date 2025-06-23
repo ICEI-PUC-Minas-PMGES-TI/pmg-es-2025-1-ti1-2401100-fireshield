@@ -308,6 +308,11 @@ Esta seção apresenta os módulos e APIs utilizados na solução
 **Mapa**
 
 * Leaflet - [https://leafletjs.com/](https://leafletjs.com/)
+* Nominatim (OpenStreetMap Geocoding) - [https://nominatim.openstreetmap.org/](https://nominatim.openstreetmap.org/)
+
+**Localização e Endereço**
+
+* ViaCEP (Consulta de Endereço por CEP)** - [https://viacep.com.br/](https://viacep.com.br/)
 
 **Images**:
 
@@ -319,12 +324,9 @@ Esta seção apresenta os módulos e APIs utilizados na solução
 
 **Scripts:**
 
-* jQuery - [http://www.jquery.com/](http://www.jquery.com/) ⚠️ EXEMPLO ⚠️
-* Bootstrap 4 - [http://getbootstrap.com/](http://getbootstrap.com/) ⚠️ EXEMPLO ⚠️
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Apresente os módulos e APIs utilizados no desenvolvimento da solução. Inclua itens como: (1) Frameworks, bibliotecas, módulos, etc. utilizados no desenvolvimento da solução; (2) APIs utilizadas para acesso a dados, serviços, etc.
+* LeafletJS - [https://leafletjs.com/](https://leafletjs.com/)
+* jQuery - [http://www.jquery.com/](http://www.jquery.com/)
+* Bootstrap 4 - [http://getbootstrap.com/](http://getbootstrap.com/) 
 
 # Referências
 
