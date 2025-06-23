@@ -232,7 +232,17 @@ Exibe todas as denúncias com base em suas coordenadas geográficas em um mapa i
 
 ![Tela de Funcionalidade](images/mapa.png)
 
+##### Funcionalidade 3 - Feed de Denuncias
 
+EVisualização das denúncias em formato de carrossel, exibindo dados como local, data, tipo de área, descrição e foto. 
+
+* **Estrutura de dados:** [Denuncias](#ti_ed_denuncias)
+* **Instruções de acesso:**
+  * Acesse a página Feed de Denúncias 
+  * O carrossel exibe automaticamente as denúncias em ordem mais recente 
+* **Tela da funcionalidade:**
+
+![Tela de Funcionalidade](images/feed.png)
 
 ## Estruturas de Dados
 
