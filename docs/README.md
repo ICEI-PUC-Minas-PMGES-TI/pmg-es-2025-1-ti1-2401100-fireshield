@@ -219,11 +219,20 @@ Permite o envio de denúncias sobre queimadas de forma anônima ou identificada,
 
 ![Tela de Funcionalidade](images/denuncia.png)
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Apresente cada uma das funcionalidades que a aplicação fornece tanto para os usuários quanto aos administradores da solução.
->
-> Inclua, para cada funcionalidade, itens como: (1) titulos e descrição da funcionalidade; (2) Estrutura de dados associada; (3) o detalhe sobre as instruções de acesso e uso.
+##### Funcionalidade 2 - Visualização de Denuncias no Mapa
+
+Exibe todas as denúncias com base em suas coordenadas geográficas em um mapa interativo. 
+
+* **Estrutura de dados:** [Denuncias](#ti_ed_denuncias)
+* **Tecnologia utilizada:** [Leaflet]
+* **Instruções de acesso:**
+  * Acesse a página de mapa (ex: mapa.html) 
+  * As denúncias serão exibidas com marcadores no mapa 
+* **Tela da funcionalidade:**
+
+![Tela de Funcionalidade](images/mapa.png)
+
+
 
 ## Estruturas de Dados
 
