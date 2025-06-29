@@ -338,10 +338,6 @@ Esta seção apresenta os módulos e APIs utilizados na solução
 
 * Unsplash - [https://leafletjs.com/](https://leafletjs.com/)
 
-**Fonts:**
-
-* Icons Font Face - [https://fontawesome.com/](https://fontawesome.com/) ⚠️ EXEMPLO ⚠️
-
 **Scripts:**
 
 * LeafletJS - [https://leafletjs.com/](https://leafletjs.com/)
