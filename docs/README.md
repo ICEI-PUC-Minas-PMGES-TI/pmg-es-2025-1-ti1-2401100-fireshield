@@ -194,13 +194,13 @@ Esta seção apresenta todos os detalhes da solução criada no projeto.
 ## Vídeo do Projeto
  Projeto em video da equipe
 
-[![Vídeo do projeto](images/video.zip)](images/video.png)
+[![Vídeo do projeto](images/video.zip)](images/video.zip)
 
 O video excede 100mb, favor descompactar o arquivo
 
 Caso o video fique sem som o video tambem esta disponibilizado na plataforma Youtube
 
-** ![Video Youtube](https://youtu.be/zzwt9y-oq4w) **
+** ![Video Youtube]() https://youtu.be/zzwt9y-oq4w**
 
 ## Funcionalidades
 
