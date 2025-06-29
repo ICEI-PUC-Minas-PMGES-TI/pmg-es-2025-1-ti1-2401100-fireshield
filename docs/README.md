@@ -191,15 +191,16 @@ Esta seção apresenta todos os detalhes da solução criada no projeto.
 
 ## Vídeo do Projeto
 
-O vídeo a seguir traz uma apresentação do problema que a equipe está tratando e a proposta de solução. ⚠️ EXEMPLO ⚠️
+## Vídeo do Projeto
+ Projeto em video da equipe
 
-[![Vídeo do projeto](images/video.png)](https://www.youtube.com/embed/70gGoFyGeqQ)
+[![Vídeo do projeto](images/video.zip)](images/video.png)
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> O video de apresentação é voltado para que o público externo possa conhecer a solução. O formato é livre, sendo importante que seja apresentado o problema e a solução numa linguagem descomplicada e direta.
->
-> Inclua um link para o vídeo do projeto.
+O video excede 100mb, favor descompactar o arquivo
+
+Caso o video fique sem som o video tambem esta disponibilizado na plataforma Youtube
+
+** ![Video Youtube](https://youtu.be/zzwt9y-oq4w) **
 
 ## Funcionalidades
 
